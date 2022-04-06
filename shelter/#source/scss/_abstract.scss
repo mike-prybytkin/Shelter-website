@@ -1,0 +1,26 @@
+// $main-font: 'georgiaregular', 'Times New Roman', serif;
+$main-color: #F1CDB3;
+$dark-color1: #545454;
+$dark-color2: #292929;
+$hover-butt-color: #FDDCC4;
+$transparent-50-black: #00000050;
+
+$inside-margin: 40px;
+
+@mixin flex ($justify: center, $align: initial) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin font ($size: 16px, $weight: 400, $color: $main-color) {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+%page-display {
+    width: 1280px;
+    margin: 0 auto;
+}

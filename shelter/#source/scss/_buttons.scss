@@ -1,0 +1,10 @@
+%butt-start-section {
+    width: 207px;
+    height: 52px;
+    border-radius: 26px;
+    cursor: pointer;
+    border: none;
+    background-color: $main-color;
+    @include font(17px, 400, $dark-color2);
+    transition: 0.4s
+}
