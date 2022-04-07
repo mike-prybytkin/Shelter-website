@@ -98,7 +98,7 @@ header {
                 @extend %butt-start-section;
                 letter-spacing: 1px;
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.08);
                     background-color: $hover-butt-color;
                     box-shadow: 0px 0px 15px #00000095;
                 }
@@ -145,4 +145,81 @@ header {
                 margin-bottom: 26px;
             }
         }
+}
+
+.our-friends-section {
+    height: 877px;
+    background-color: #f6f6f6;
+    text-align: center;
+
+    h2{
+        padding-top: 81px;
+        @include font(35px, 400,$dark-color1);
+        letter-spacing: 2.1px;
+        line-height: 1.25em;
+    }
+
+    .slider-our-friends{
+        margin-left: $inside-margin;
+        margin-right: $inside-margin;
+        margin-top: 61px;
+        @include flex(space-between, center);
+
+        .left-butt-slider, .right-butt-slider {
+            @extend %butt-circle;
+            margin-top: 3px;
+                &:hover {
+                    background-color: #FDDCC4;
+                    border: solid 2px #FDDCC4;
+                }
+            background-image: url('../../assets/images/svg/Arrow.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &.right-butt-slider {
+                transform: rotate(180deg);
+            }
+        }
+
+        .pets-photos-slider {
+            @include flex(space-between, center);
+            gap: 90px;
+        }
+    }
+    
+    .get-the-rest-butt {
+        margin-top: 60px;
+        @extend %butt-get-to-know-the-rest;
+        letter-spacing: 1px;
+        &:hover {
+            transform: scale(1.08);
+            background-color: $hover-butt-color;
+            box-shadow: 0px 0px 15px #00000095;
+        }
+    }
+}
+
+.pets-photos-slider {
+    div{
+        width: 270px;
+        height: 435px;
+        background-color: #fafafa;
+        border-radius: 9px;
+    }
+
+    figcaption {
+        padding-top: 26px;
+        @include font(20px, 400,$dark-color1);
+        letter-spacing: 1.4px;
+    }
+
+    button {
+        margin-top: 30px;
+        @extend %butt-pets-slider;
+        letter-spacing: 1px;
+        &:hover {
+            background-color: #FDDCC4;
+            border: solid 2px #FDDCC4;
+        }
+    }
 }

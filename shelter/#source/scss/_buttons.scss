@@ -8,3 +8,36 @@
     @include font(17px, 400, $dark-color2);
     transition: 0.4s
 }
+
+%butt-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    cursor: pointer;
+    border: 2px solid $main-color;
+    background-color: transparent;
+    @include font(17px, 400, $dark-color2);
+    transition: 0.4s
+}
+
+%butt-pets-slider {
+    width: 187px;
+    height: 52px;
+    border-radius: 26px;
+    cursor: pointer;
+    border: 2px solid $main-color;
+    background-color: transparent;
+    @include font(17px, 400, $dark-color2);
+    transition: 0.4s
+}
+
+%butt-get-to-know-the-rest{
+    width: 261px;
+    height: 52px;
+    border-radius: 26px;
+    border: none;
+    background-color: $main-color;
+    cursor: pointer;
+    @include font(17px, 400, $dark-color2);
+    transition: 0.4s
+}

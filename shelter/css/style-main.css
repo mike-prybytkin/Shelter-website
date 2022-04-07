@@ -18,6 +18,51 @@ header, main, footer {
   transition: 0.4s;
 }
 
+.our-friends-section .slider-our-friends .left-butt-slider, .our-friends-section .slider-our-friends .right-butt-slider {
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+  background-color: transparent;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #292929;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pets-photos-slider button {
+  width: 187px;
+  height: 52px;
+  border-radius: 26px;
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+  background-color: transparent;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #292929;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.our-friends-section .get-the-rest-butt {
+  width: 261px;
+  height: 52px;
+  border-radius: 26px;
+  border: none;
+  background-color: #F1CDB3;
+  cursor: pointer;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #292929;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 body, html {
   height: 100%;
 }
@@ -140,8 +185,8 @@ header {
   letter-spacing: 1px;
 }
 .start-section div:first-of-type button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
   background-color: #FDDCC4;
   -webkit-box-shadow: 0px 0px 15px #00000095;
           box-shadow: 0px 0px 15px #00000095;
@@ -195,4 +240,93 @@ header {
 .about-shelter-section .text-about-shelter p:first-of-type {
   margin-top: 26px;
   margin-bottom: 26px;
+}
+
+.our-friends-section {
+  height: 877px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.our-friends-section h2 {
+  padding-top: 81px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #545454;
+  letter-spacing: 2.1px;
+  line-height: 1.25em;
+}
+.our-friends-section .slider-our-friends {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.our-friends-section .slider-our-friends .left-butt-slider, .our-friends-section .slider-our-friends .right-butt-slider {
+  margin-top: 3px;
+  background-image: url("../../assets/images/svg/Arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.our-friends-section .slider-our-friends .left-butt-slider:hover, .our-friends-section .slider-our-friends .right-butt-slider:hover {
+  background-color: #FDDCC4;
+  border: solid 2px #FDDCC4;
+}
+.our-friends-section .slider-our-friends .left-butt-slider.right-butt-slider, .our-friends-section .slider-our-friends .right-butt-slider.right-butt-slider {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.our-friends-section .slider-our-friends .pets-photos-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 90px;
+}
+.our-friends-section .get-the-rest-butt {
+  margin-top: 60px;
+  letter-spacing: 1px;
+}
+.our-friends-section .get-the-rest-butt:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: #FDDCC4;
+  -webkit-box-shadow: 0px 0px 15px #00000095;
+          box-shadow: 0px 0px 15px #00000095;
+}
+
+.pets-photos-slider div {
+  width: 270px;
+  height: 435px;
+  background-color: #fafafa;
+  border-radius: 9px;
+}
+.pets-photos-slider figcaption {
+  padding-top: 26px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #545454;
+  letter-spacing: 1.4px;
+}
+.pets-photos-slider button {
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+.pets-photos-slider button:hover {
+  background-color: #FDDCC4;
+  border: solid 2px #FDDCC4;
 }
