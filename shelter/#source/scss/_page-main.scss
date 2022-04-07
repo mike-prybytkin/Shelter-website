@@ -223,3 +223,35 @@ header {
         }
     }
 }
+
+.how-to-help-section {
+    height: 611px;
+    text-align: center;
+    h2 {
+        padding-top: 81px;
+        @include font(35px, 400,$dark-color1);
+        letter-spacing: 2.1px;
+        line-height: 1.25em;
+    }
+    
+    .how-to-help-wrapper {
+        margin-top: 61px;
+        margin-left: 25px;
+        margin-right: 25px;
+        @include flex(center, center);
+        flex-wrap: wrap;
+        gap: 55px;
+
+        figure {
+            width: 180px;
+            height: 113px;
+
+            figcaption{
+                padding-top: 26px;
+                @include font(20px, 400,$dark-color1);
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+}
