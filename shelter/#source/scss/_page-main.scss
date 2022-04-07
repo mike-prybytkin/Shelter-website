@@ -253,5 +253,71 @@ header {
             }
         }
     }
+}
 
+.donation-section {
+    height: 462px;
+    background-color: #F6F6F6;
+
+    .donation-section-wrapper {
+        padding-top: 80px;
+        @include flex(center, center);
+        gap: 28px;
+
+        .bg-donation {
+            width: 505px;
+            height: 261px;
+            background-image: url('../../assets/images/donation-dog.png');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .info-donation-block {
+            width: 380px;
+            height: 282px;
+            padding-left: 2px;
+
+            h2{
+                padding-top: 1px;
+                @include font(35px, 400,$dark-color1);
+                letter-spacing: 2.1px;
+                line-height: 1.25em;
+            }
+
+            & p:first-of-type {
+                padding-top: 21px;
+                @include font(15px, 400,$dark-color1);
+                letter-spacing: 1px;
+            }
+
+            .info-donation-data {
+                margin-top: 20px;
+                width: 349px;
+                height: 43px;
+                background-color: $main-color;
+                border-radius: 9px;
+                padding-top: 10px;
+
+                span {
+                    @include font(20px, 400,$dark-color1);
+                    padding-left: 15px;
+                    letter-spacing: 1.2px;
+
+                    &::before {
+                        display: inline-block;
+                        vertical-align: middle;
+                        content: url('../../assets/icons/credit-card.svg');
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            & p:last-of-type {
+                padding-top: 20px;
+                @include font(12px, 400, #B2B2B2);
+                line-height: 1.5em;
+                font-style: italic;
+            }
+        }
+    }
 }

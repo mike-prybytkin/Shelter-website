@@ -373,3 +373,81 @@ header {
   color: #545454;
   letter-spacing: 1px;
 }
+
+.donation-section {
+  height: 462px;
+  background-color: #F6F6F6;
+}
+.donation-section .donation-section-wrapper {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 28px;
+}
+.donation-section .donation-section-wrapper .bg-donation {
+  width: 505px;
+  height: 261px;
+  background-image: url("../../assets/images/donation-dog.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.donation-section .donation-section-wrapper .info-donation-block {
+  width: 380px;
+  height: 282px;
+  padding-left: 2px;
+}
+.donation-section .donation-section-wrapper .info-donation-block h2 {
+  padding-top: 1px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #545454;
+  letter-spacing: 2.1px;
+  line-height: 1.25em;
+}
+.donation-section .donation-section-wrapper .info-donation-block p:first-of-type {
+  padding-top: 21px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #545454;
+  letter-spacing: 1px;
+}
+.donation-section .donation-section-wrapper .info-donation-block .info-donation-data {
+  margin-top: 20px;
+  width: 349px;
+  height: 43px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  padding-top: 10px;
+}
+.donation-section .donation-section-wrapper .info-donation-block .info-donation-data span {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #545454;
+  padding-left: 15px;
+  letter-spacing: 1.2px;
+}
+.donation-section .donation-section-wrapper .info-donation-block .info-donation-data span::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: url("../../assets/icons/credit-card.svg");
+  margin-right: 15px;
+}
+.donation-section .donation-section-wrapper .info-donation-block p:last-of-type {
+  padding-top: 20px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #B2B2B2;
+  line-height: 1.5em;
+  font-style: italic;
+}
