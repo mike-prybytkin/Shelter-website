@@ -111,3 +111,38 @@ header {
             background-image: url('../../assets/images/start-screen-puppy.png');
         }
 }
+
+.about-shelter-section {
+    height: 588px;
+    padding-top: 80px;
+    gap: 120px;
+    @include flex();
+
+        .bg-dog-and-cat{
+            width: 300px;
+            height: 408px;
+            background-image: url('../../assets/images/about-pets.png');
+        }
+
+        .text-about-shelter {
+            padding-top: 16px;
+            width: 430px;
+
+            h2{
+                @include font(35px, 400,$dark-color1);
+                width: 320px;
+                letter-spacing: 2.1px;
+                line-height: 1.25em;
+            }
+            
+            p {
+                @include font(15px, 400,#4c4c4c);
+                line-height: 24px;
+            }
+
+            & p:first-of-type {
+                margin-top: 26px;
+                margin-bottom: 26px;
+            }
+        }
+}
