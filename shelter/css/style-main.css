@@ -136,7 +136,6 @@ header {
   background-position: center -96px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .start-section {
@@ -450,4 +449,121 @@ header {
   color: #B2B2B2;
   line-height: 1.5em;
   font-style: italic;
+}
+
+footer {
+  height: 350px;
+  width: 100%;
+  background-image: url("../../assets/images/start-screen-gradient-background.png");
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .wrapper-footer {
+  width: 1280px;
+  height: 100%;
+  padding-top: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+footer .wrapper-footer .bg-dog-footer {
+  width: 300px;
+  height: 310px;
+  background-image: url("../../assets/images/footer-puppy.png");
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+footer .wrapper-footer div {
+  width: 300px;
+}
+footer .wrapper-footer div h3 {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 2.1px;
+  line-height: 1.25em;
+}
+footer .wrapper-footer .question-block p {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #F1CDB3;
+  letter-spacing: 1.3px;
+}
+footer .wrapper-footer .question-block p a {
+  text-decoration: none;
+  color: #F1CDB3;
+}
+footer .wrapper-footer .question-block .email {
+  padding-top: 41px;
+}
+footer .wrapper-footer .question-block .email::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: url("../../assets/icons/icon-email.svg");
+  margin-right: 20px;
+}
+footer .wrapper-footer .question-block .telephone {
+  padding-top: 36px;
+}
+footer .wrapper-footer .question-block .telephone::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: url("../../assets/icons//icon-phone.svg");
+  margin-right: 20px;
+}
+footer .wrapper-footer .adress-block {
+  width: 321px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #F1CDB3;
+  letter-spacing: 1.2px;
+}
+footer .wrapper-footer .adress-block address {
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-style: normal;
+}
+footer .wrapper-footer .adress-block address::before {
+  margin-top: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  content: url("../../assets/icons/icon-marker.svg");
+  margin-right: 20px;
+}
+footer .wrapper-footer .adress-block address:last-of-type {
+  padding-top: 37px;
+}
+footer .wrapper-footer .adress-block address:last-of-type::before {
+  margin-top: -5px;
 }
