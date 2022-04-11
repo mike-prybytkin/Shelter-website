@@ -176,7 +176,8 @@ header {
         margin-top: 61px;
         @include flex(space-between, center);
 
-        .left-butt-slider, .right-butt-slider {
+        .left-butt-slider, 
+        .right-butt-slider {
             @extend %butt-circle;
             margin-top: 3px;
                 &:hover {
@@ -343,126 +344,6 @@ header {
                 @include font(12px, 400, #B2B2B2);
                 line-height: 1.5em;
                 font-style: italic;
-            }
-        }
-    }
-}
-
-footer {
-    height: 350px;
-    width: 100%;
-    background-image: url('../../assets/images/start-screen-gradient-background.png');
-    background-position: center 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include flex(center, center);
-
-    .footer-wrapper {
-        height: 100%;
-        padding-top: 57px;
-        @include flex(space-between, flex-start);
-        
-    
-        .bg-dog-footer {
-            width: 300px;
-            height: 310px;
-            background-image: url('../../assets/images/footer-puppy.png');
-            background-position: center 0px;
-            background-repeat: no-repeat;
-            align-self: flex-end;
-        }
-
-        div {
-            width: 300px;
-
-            h3 {
-                @include font(35px, 400, #ffffff);
-                letter-spacing: 2.1px;
-                line-height: 1.25em;
-            }
-        }
-
-        .question-block {
-            p {
-                @include font(20px, 400, $main-color);
-                letter-spacing: 1.3px;
-
-                a {
-                    text-decoration: none;
-                    color: $main-color;
-                }
-            }
-
-            .email {
-                padding-top: 41px;
-
-                a {
-                    &::before { 
-                        display: inline-block;
-                        vertical-align: middle;
-                        content: url('../../assets/icons/icon-email.svg');
-                        margin-right: 20px
-                    }  
-                }
-            }
-
-            .telephone {
-                padding-top: 36px;
-
-                a {
-                    &::before { 
-                        display: inline-block;
-                        vertical-align: middle;
-                        content: url('../../assets/icons//icon-phone.svg');
-                        margin-right: 20px
-                    } 
-                }
-            }
-        }
-
-        .adress-block {
-            width: 321px;
-            @include font(20px, 400, $main-color);
-            letter-spacing: 1.2px;
-
-            .address-boston {
-                padding-top: 35px;
-                @include flex(flex-start, flex-start);
-                font-style: normal;
-
-                &::before { 
-                    margin-top: 5px;
-                    display: inline-block;
-                    vertical-align: middle;
-                    content: url('../../assets/icons/icon-marker.svg');
-                    margin-right: 20px
-                }
-
-                a{
-                    text-decoration: none;
-                    color: $main-color;
-                    display: block;
-                    position: absolute;
-                    padding-left: 41px;
-
-                }
-            }
-
-            & address:last-of-type {
-                padding-top: 37px;
-
-                a{
-                    text-decoration: none;
-                    color: $main-color;
-                    font-style: normal;
-
-                    &::before {
-                        margin-right: 20px;
-                        display: inline-block;
-                        vertical-align: middle;
-                        content: url('../../assets/icons/icon-marker.svg');
-                    }
-                }
             }
         }
     }
