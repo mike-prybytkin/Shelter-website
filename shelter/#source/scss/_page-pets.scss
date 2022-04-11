@@ -13,8 +13,11 @@ html {
 }
 
 header {
-    height: 90px;
+    height: 120px;
+    width: 100%;
     background-color: #ffffff;
+    position: fixed;
+    left: calc(100% - (1200 / 2));
 }
 
 .header-wrapper-nav {
@@ -74,6 +77,10 @@ header {
     }
 }
 
+main {
+    padding-top: 120px;
+}
+
 .our-friends-section {
     height: 1342px;
     background-color: #f6f6f6;
@@ -81,9 +88,9 @@ header {
 }
 
 .our-friends-section-wrapper {
-    padding-top: 81px;
+    padding-top: 59px;
 
-    h2{
+    h1{
         @include font(35px, 400,$dark-color1);
         letter-spacing: 2.1px;
         line-height: 1.25em;
