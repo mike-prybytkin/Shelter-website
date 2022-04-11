@@ -2,7 +2,15 @@ body, html {
     height: 100%;
 }
 
-header, main, footer {
+html {
+    scroll-behavior: smooth;
+}
+
+.header-wrapper, 
+.start-section-wrapper, 
+.footer-wrapper,
+.how-to-help-section,
+.our-friends-section-wrapper {
     @extend %page-display;
 }
 
@@ -11,12 +19,16 @@ header, main, footer {
 }
 
 .main-words {
-    margin-left: $inside-margin;
     text-align: center;
     .house-name {
         @include font(32px);
         letter-spacing: 2px;
         margin-bottom: 6px;
+
+        a{
+            text-decoration: none;
+            color: $main-color;
+        }
     }
     p:last-of-type {
         letter-spacing: 0.5px;
@@ -25,7 +37,6 @@ header, main, footer {
 }
 
 .nav {
-    margin-right: $inside-margin;
     ul{
         margin-bottom: 5px;
         li{
@@ -69,12 +80,14 @@ header {
     background-position: center -100px;
     background-repeat: no-repeat;
     background-size: cover;
+    @include flex(center, flex-end);
+}
 
+.start-section-wrapper {
     @include flex(space-between, flex-end);
         div:first-of-type {
             width: 460px;
             margin-bottom: 243px;
-            margin-left: $inside-margin;
 
             h1{
                 @include font(44px, 400,#ffffff);
@@ -82,29 +95,27 @@ header {
                 line-height: 1.28em;
             }
 
-            p:nth-child(2){
-                margin-top: 7px;
-            }
-
-            p:last-of-type{
+            p {
                 margin-top: 43px;
+                padding-bottom: 60px;
                 @include font(15px, 400,#cdcdcd);
                 line-height: 1.55em;
             }
 
-            button {
-                margin-top: 43px;
-                @extend %butt-start-section;
-                letter-spacing: 1px;
-                &:hover {
-                    transform: scale(1.08);
-                    background-color: $hover-butt-color;
-                    box-shadow: 0px 0px 15px #00000095;
+            .button-container-our-pets {
+                margin: 0;
+                padding-bottom: 15px;
+                a {
+                    @extend %butt-start-section;
+                    letter-spacing: 1px;
+                    &:hover {
+                        background-color: $hover-butt-color;
+                        box-shadow: 0px 0px 15px #00000095;
+                    }
                 }
             }
         }
         .bg-dog {
-            margin-right: $inside-margin;
             width: 698px;
             height: 728px;
             background-image: url('../../assets/images/start-screen-puppy.png');
@@ -150,6 +161,9 @@ header {
     height: 877px;
     background-color: #f6f6f6;
     text-align: center;
+}
+
+.our-friends-section-wrapper {
 
     h2{
         padding-top: 81px;
@@ -159,8 +173,6 @@ header {
     }
 
     .slider-our-friends{
-        margin-left: $inside-margin;
-        margin-right: $inside-margin;
         margin-top: 61px;
         @include flex(space-between, center);
 
@@ -186,15 +198,18 @@ header {
         }
     }
     
-    .get-the-rest-butt {
-        margin-top: 60px;
-        @extend %butt-get-to-know-the-rest;
-        letter-spacing: 1px;
-        &:hover {
-            transform: scale(1.08);
-            background-color: $hover-butt-color;
-            box-shadow: 0px 0px 15px #00000095;
-        }
+    .button-container-get-the-rest {
+        margin-top: 77px;
+        padding: 0;
+        a{
+            @extend %butt-get-to-know-the-rest;
+            letter-spacing: 1px;
+            &:hover {
+                transform: scale(1.08);
+                background-color: $hover-butt-color;
+                box-shadow: 0px 0px 15px #00000063;
+            }
+        } 
     }
 }
 
@@ -204,6 +219,7 @@ header {
         height: 435px;
         background-color: #fafafa;
         border-radius: 9px;
+        transition: 0.4s
     }
 
     figcaption {
@@ -216,9 +232,19 @@ header {
         margin-top: 30px;
         @extend %butt-pets-slider;
         letter-spacing: 1px;
-        &:hover {
+    }
+}
+
+.pets-photos-slider {
+    div:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 15px #00000063;
+        button {
             background-color: #FDDCC4;
             border: solid 2px #FDDCC4;
+            &:hover{
+                box-shadow: 0px 0px 15px #00000063;
+            }
         }
     }
 }
@@ -297,8 +323,9 @@ header {
                 border-radius: 9px;
                 padding-top: 10px;
 
-                span {
+                a {
                     @include font(20px, 400,$dark-color1);
+                    text-decoration: none;
                     padding-left: 15px;
                     letter-spacing: 1.2px;
 
@@ -330,13 +357,10 @@ footer {
     background-size: cover;
     @include flex(center, center);
 
-    .wrapper-footer {
-        width: 1280px;
+    .footer-wrapper {
         height: 100%;
         padding-top: 57px;
         @include flex(space-between, flex-start);
-        padding-left: $inside-margin;
-        padding-right: $inside-margin;
         
     
         .bg-dog-footer {
@@ -372,24 +396,27 @@ footer {
             .email {
                 padding-top: 41px;
 
-                &::before { 
-                    display: inline-block;
-                    vertical-align: middle;
-                    content: url('../../assets/icons/icon-email.svg');
-                    margin-right: 20px
-                }  
+                a {
+                    &::before { 
+                        display: inline-block;
+                        vertical-align: middle;
+                        content: url('../../assets/icons/icon-email.svg');
+                        margin-right: 20px
+                    }  
+                }
             }
 
             .telephone {
                 padding-top: 36px;
 
-                &::before { 
-                    display: inline-block;
-                    vertical-align: middle;
-                    content: url('../../assets/icons//icon-phone.svg');
-                    margin-right: 20px
-                } 
-
+                a {
+                    &::before { 
+                        display: inline-block;
+                        vertical-align: middle;
+                        content: url('../../assets/icons//icon-phone.svg');
+                        margin-right: 20px
+                    } 
+                }
             }
         }
 
@@ -398,7 +425,7 @@ footer {
             @include font(20px, 400, $main-color);
             letter-spacing: 1.2px;
 
-            address {
+            .address-boston {
                 padding-top: 35px;
                 @include flex(flex-start, flex-start);
                 font-style: normal;
@@ -410,13 +437,31 @@ footer {
                     content: url('../../assets/icons/icon-marker.svg');
                     margin-right: 20px
                 }
+
+                a{
+                    text-decoration: none;
+                    color: $main-color;
+                    display: block;
+                    position: absolute;
+                    padding-left: 41px;
+
+                }
             }
 
             & address:last-of-type {
                 padding-top: 37px;
 
-                &::before {
-                    margin-top: -5px;
+                a{
+                    text-decoration: none;
+                    color: $main-color;
+                    font-style: normal;
+
+                    &::before {
+                        margin-right: 20px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        content: url('../../assets/icons/icon-marker.svg');
+                    }
                 }
             }
         }

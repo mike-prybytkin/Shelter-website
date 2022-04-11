@@ -5,8 +5,6 @@ $dark-color2: #292929;
 $hover-butt-color: #FDDCC4;
 $transparent-50-black: #00000050;
 
-$inside-margin: 40px;
-
 @mixin flex ($justify: center, $align: stretch) {
     display: flex;
     align-items: $align;
@@ -21,6 +19,6 @@ $inside-margin: 40px;
 }
 
 %page-display {
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
 }
