@@ -67,7 +67,7 @@ html {
 header {
     padding-top: 60px;
     height: 100px;
-    background-image: url('../../assets/images/start-screen-gradient-background.png');
+    background-image: url('../assets/images/start-screen-gradient-background.png');
     background-position: center -96px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +76,7 @@ header {
 .start-section {
     width: 100%;
     height: 808px;
-    background-image: url('../../assets/images/start-screen-gradient-background.png');
+    background-image: url('../assets/images/start-screen-gradient-background.png');
     background-position: center -100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,7 @@ header {
         .bg-dog {
             width: 698px;
             height: 728px;
-            background-image: url('../../assets/images/start-screen-puppy.png');
+            background-image: url('../assets/images/start-screen-puppy.png');
         }
 }
 
@@ -131,7 +131,7 @@ header {
         .bg-dog-and-cat{
             width: 300px;
             height: 408px;
-            background-image: url('../../assets/images/about-pets.png');
+            background-image: url('../assets/images/about-pets.png');
         }
 
         .text-about-shelter {
@@ -184,7 +184,7 @@ header {
                     background-color: #FDDCC4;
                     border: solid 2px #FDDCC4;
                 }
-            background-image: url('../../assets/images/svg/Arrow.svg');
+            background-image: url('../assets/images/svg/Arrow.svg');
             background-position: center;
             background-repeat: no-repeat;
 
@@ -293,7 +293,7 @@ header {
         .bg-donation {
             width: 505px;
             height: 261px;
-            background-image: url('../../assets/images/donation-dog.png');
+            background-image: url('../assets/images/donation-dog.png');
             background-position: center;
             background-repeat: no-repeat;
         }
@@ -333,7 +333,7 @@ header {
                     &::before {
                         display: inline-block;
                         vertical-align: middle;
-                        content: url('../../assets/icons/credit-card.svg');
+                        content: url('../assets/icons/credit-card.svg');
                         margin-right: 15px;
                     }
                 }

@@ -141,7 +141,7 @@ html {
 header {
   padding-top: 60px;
   height: 100px;
-  background-image: url("../../assets/images/start-screen-gradient-background.png");
+  background-image: url("../assets/images/start-screen-gradient-background.png");
   background-position: center -96px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,7 +150,7 @@ header {
 .start-section {
   width: 100%;
   height: 808px;
-  background-image: url("../../assets/images/start-screen-gradient-background.png");
+  background-image: url("../assets/images/start-screen-gradient-background.png");
   background-position: center -100px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,7 +212,7 @@ header {
 .start-section-wrapper .bg-dog {
   width: 698px;
   height: 728px;
-  background-image: url("../../assets/images/start-screen-puppy.png");
+  background-image: url("../assets/images/start-screen-puppy.png");
 }
 
 .about-shelter-section {
@@ -232,7 +232,7 @@ header {
 .about-shelter-section .bg-dog-and-cat {
   width: 300px;
   height: 408px;
-  background-image: url("../../assets/images/about-pets.png");
+  background-image: url("../assets/images/about-pets.png");
 }
 .about-shelter-section .text-about-shelter {
   padding-top: 16px;
@@ -289,7 +289,7 @@ header {
 .our-friends-section-wrapper .slider-our-friends .left-butt-slider,
 .our-friends-section-wrapper .slider-our-friends .right-butt-slider {
   margin-top: 3px;
-  background-image: url("../../assets/images/svg/Arrow.svg");
+  background-image: url("../assets/images/svg/Arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -428,7 +428,7 @@ header {
 .donation-section .donation-section-wrapper .bg-donation {
   width: 505px;
   height: 261px;
-  background-image: url("../../assets/images/donation-dog.png");
+  background-image: url("../assets/images/donation-dog.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -474,7 +474,7 @@ header {
 .donation-section .donation-section-wrapper .info-donation-block .info-donation-data a::before {
   display: inline-block;
   vertical-align: middle;
-  content: url("../../assets/icons/credit-card.svg");
+  content: url("../assets/icons/credit-card.svg");
   margin-right: 15px;
 }
 .donation-section .donation-section-wrapper .info-donation-block p:last-of-type {
@@ -490,7 +490,7 @@ header {
 footer {
   height: 350px;
   width: 100%;
-  background-image: url("../../assets/images/start-screen-gradient-background.png");
+  background-image: url("../assets/images/start-screen-gradient-background.png");
   background-position: center 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -520,7 +520,7 @@ footer .footer-wrapper {
 footer .footer-wrapper .bg-dog-footer {
   width: 300px;
   height: 310px;
-  background-image: url("../../assets/images/footer-puppy.png");
+  background-image: url("../assets/images/footer-puppy.png");
   background-position: center 0px;
   background-repeat: no-repeat;
   -ms-flex-item-align: end;
@@ -554,7 +554,7 @@ footer .footer-wrapper .question-block .email {
 footer .footer-wrapper .question-block .email a::before {
   display: inline-block;
   vertical-align: middle;
-  content: url("../../assets/icons/icon-email.svg");
+  content: url("../assets/icons/icon-email.svg");
   margin-right: 20px;
 }
 footer .footer-wrapper .question-block .telephone {
@@ -563,7 +563,7 @@ footer .footer-wrapper .question-block .telephone {
 footer .footer-wrapper .question-block .telephone a::before {
   display: inline-block;
   vertical-align: middle;
-  content: url("../../assets/icons//icon-phone.svg");
+  content: url("../assets/icons//icon-phone.svg");
   margin-right: 20px;
 }
 footer .footer-wrapper .adress-block {
@@ -591,7 +591,7 @@ footer .footer-wrapper .adress-block .address-boston::before {
   margin-top: 5px;
   display: inline-block;
   vertical-align: middle;
-  content: url("../../assets/icons/icon-marker.svg");
+  content: url("../assets/icons/icon-marker.svg");
   margin-right: 20px;
 }
 footer .footer-wrapper .adress-block .address-boston a {
@@ -613,5 +613,5 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   margin-right: 20px;
   display: inline-block;
   vertical-align: middle;
-  content: url("../../assets/icons/icon-marker.svg");
+  content: url("../assets/icons/icon-marker.svg");
 }

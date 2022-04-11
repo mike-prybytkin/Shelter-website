@@ -1,7 +1,7 @@
 footer {
     height: 350px;
     width: 100%;
-    background-image: url('../../assets/images/start-screen-gradient-background.png');
+    background-image: url('../assets/images/start-screen-gradient-background.png');
     background-position: center 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@ footer {
         .bg-dog-footer {
             width: 300px;
             height: 310px;
-            background-image: url('../../assets/images/footer-puppy.png');
+            background-image: url('../assets/images/footer-puppy.png');
             background-position: center 0px;
             background-repeat: no-repeat;
             align-self: flex-end;
@@ -50,7 +50,7 @@ footer {
                     &::before { 
                         display: inline-block;
                         vertical-align: middle;
-                        content: url('../../assets/icons/icon-email.svg');
+                        content: url('../assets/icons/icon-email.svg');
                         margin-right: 20px
                     }  
                 }
@@ -63,7 +63,7 @@ footer {
                     &::before { 
                         display: inline-block;
                         vertical-align: middle;
-                        content: url('../../assets/icons//icon-phone.svg');
+                        content: url('../assets/icons//icon-phone.svg');
                         margin-right: 20px
                     } 
                 }
@@ -84,7 +84,7 @@ footer {
                     margin-top: 5px;
                     display: inline-block;
                     vertical-align: middle;
-                    content: url('../../assets/icons/icon-marker.svg');
+                    content: url('../assets/icons/icon-marker.svg');
                     margin-right: 20px
                 }
 
@@ -110,7 +110,7 @@ footer {
                         margin-right: 20px;
                         display: inline-block;
                         vertical-align: middle;
-                        content: url('../../assets/icons/icon-marker.svg');
+                        content: url('../assets/icons/icon-marker.svg');
                     }
                 }
             }
