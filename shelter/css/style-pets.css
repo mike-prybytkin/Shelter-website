@@ -231,13 +231,12 @@ main {
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
-.button-container-slider .two-arr-left:hover,
-.button-container-slider .one-arr-left:hover,
-.button-container-slider .page-number:hover,
-.button-container-slider .one-arr-right:hover,
-.button-container-slider .two-arr-right:hover {
-  background-color: #FDDCC4;
-  border: solid 2px #FDDCC4;
+.button-container-slider .two-arr-left,
+.button-container-slider .one-arr-left,
+.button-container-slider .page-number,
+.button-container-slider .one-arr-right,
+.button-container-slider .two-arr-right {
+  cursor: default;
 }
 .button-container-slider .two-arr-left.active-butt,
 .button-container-slider .one-arr-left.active-butt,
@@ -245,6 +244,12 @@ main {
 .button-container-slider .one-arr-right.active-butt,
 .button-container-slider .two-arr-right.active-butt {
   background-color: #F1CDB3;
+}
+.button-container-slider .one-arr-right:hover,
+.button-container-slider .two-arr-right:hover {
+  background-color: #FDDCC4;
+  border: solid 2px #FDDCC4;
+  cursor: pointer;
 }
 .button-container-slider .two-arr-left {
   background-image: url("../assets/images/svg/arr-2-transp.svg");

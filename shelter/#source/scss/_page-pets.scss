@@ -162,15 +162,22 @@ main {
     .one-arr-right,
     .two-arr-right {
         @extend %butt-circle;
-            &:hover {
-            background-color: #FDDCC4;
-            border: solid 2px #FDDCC4;
-        }
-
+        cursor: default;
         &.active-butt {
             background-color: $main-color;
         }
     }
+
+    .one-arr-right,
+    .two-arr-right {
+            &:hover {
+            background-color: #FDDCC4;
+            border: solid 2px #FDDCC4;
+            cursor: pointer;
+        }
+    }
+
+
 
     .two-arr-left {
         background-image: url('../assets/images/svg/arr-2-transp.svg');
