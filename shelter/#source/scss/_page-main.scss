@@ -262,16 +262,11 @@ header {
     
     .how-to-help-wrapper {
         margin-top: 61px;
-        margin-left: 25px;
-        margin-right: 25px;
         @include flex(center, center);
         flex-wrap: wrap;
-        gap: 55px;
+        gap: 55px 120px;
 
         figure {
-            width: 180px;
-            height: 113px;
-
             figcaption{
                 padding-top: 26px;
                 @include font(20px, 400,$dark-color1);
@@ -323,6 +318,12 @@ header {
                 background-color: $main-color;
                 border-radius: 9px;
                 padding-top: 10px;
+                transition: 0.4s;
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0px 0px 15px #00000063;
+                }
 
                 a {
                     @include font(20px, 400,$dark-color1);
