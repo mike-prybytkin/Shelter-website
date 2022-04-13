@@ -379,8 +379,6 @@ header {
 }
 .how-to-help-section .how-to-help-wrapper {
   margin-top: 61px;
-  margin-left: 25px;
-  margin-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,11 +390,7 @@ header {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 55px;
-}
-.how-to-help-section .how-to-help-wrapper figure {
-  width: 180px;
-  height: 113px;
+  gap: 55px 120px;
 }
 .how-to-help-section .how-to-help-wrapper figure figcaption {
   padding-top: 26px;
@@ -460,6 +454,13 @@ header {
   background-color: #F1CDB3;
   border-radius: 9px;
   padding-top: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.donation-section .donation-section-wrapper .info-donation-block .info-donation-data:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 15px #00000063;
+          box-shadow: 0px 0px 15px #00000063;
 }
 .donation-section .donation-section-wrapper .info-donation-block .info-donation-data a {
   font-family: "Georgia", "Times New Roman", Times, serif;
