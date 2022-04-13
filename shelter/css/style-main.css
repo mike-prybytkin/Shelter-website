@@ -323,8 +323,6 @@ header {
   letter-spacing: 1px;
 }
 .our-friends-section-wrapper .button-container-get-the-rest a:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
   background-color: #FDDCC4;
   -webkit-box-shadow: 0px 0px 15px #00000063;
           box-shadow: 0px 0px 15px #00000063;
@@ -355,6 +353,7 @@ header {
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 15px #00000063;
           box-shadow: 0px 0px 15px #00000063;
+  background-color: #ffffff;
 }
 .pets-photos-slider div:hover button {
   background-color: #FDDCC4;
