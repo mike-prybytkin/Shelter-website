@@ -23,7 +23,7 @@ html {
     .house-name {
         @include font(32px);
         letter-spacing: 2px;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
 
         a{
             text-decoration: none;
@@ -31,7 +31,8 @@ html {
         }
     }
     p:last-of-type {
-        letter-spacing: 0.5px;
+        @include font-arial(13px);
+        letter-spacing: 1.3px;
         color: #ffffff;
     }
 }
@@ -41,19 +42,20 @@ html {
         margin-bottom: 5px;
         li{
             display: inline;
-            margin: 0 10px 0 15px;
+            margin: 0 15.5px 0 15px;
             letter-spacing: 0.45px;
             }
             a{
                 text-decoration: none;
-                @include font(15px);
+                @include font-arial(15px);
+                letter-spacing: 0.1px;
                 color: #cdcdcd;
                 transition: 0.3s;
                 &:hover {
                     color: #ffffff;
                 }
                 &.activ-nav-link {
-                    padding-bottom: 3px;
+                    padding-bottom: 4px;
                     border-bottom: solid 3px $main-color;
                     color: #ffffff;
                 }
@@ -98,8 +100,8 @@ header {
             p {
                 margin-top: 43px;
                 padding-bottom: 60px;
-                @include font(15px, 400,#cdcdcd);
-                line-height: 1.55em;
+                @include font-arial(15px, 400,#cdcdcd);
+                line-height: 1.56em;
             }
 
             .button-container-our-pets {
@@ -146,8 +148,8 @@ header {
             }
             
             p {
-                @include font(15px, 400,#4c4c4c);
-                line-height: 24px;
+                @include font-arial(15px, 400,#4c4c4c);
+                line-height: 23.9px;
             }
 
             & p:first-of-type {
@@ -342,7 +344,7 @@ header {
 
             & p:last-of-type {
                 padding-top: 20px;
-                @include font(12px, 400, #B2B2B2);
+                @include font-arial(12px, 400, #B2B2B2);
                 line-height: 1.5em;
                 font-style: italic;
             }

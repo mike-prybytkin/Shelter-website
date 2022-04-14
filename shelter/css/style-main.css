@@ -97,14 +97,18 @@ html {
   font-weight: 400;
   color: #F1CDB3;
   letter-spacing: 2px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .main-words .house-name a {
   text-decoration: none;
   color: #F1CDB3;
 }
 .main-words p:last-of-type {
-  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #F1CDB3;
+  letter-spacing: 1.3px;
   color: #ffffff;
 }
 
@@ -113,15 +117,16 @@ html {
 }
 .nav ul li {
   display: inline;
-  margin: 0 10px 0 15px;
+  margin: 0 15.5px 0 15px;
   letter-spacing: 0.45px;
 }
 .nav ul a {
   text-decoration: none;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #F1CDB3;
+  letter-spacing: 0.1px;
   color: #cdcdcd;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -130,7 +135,7 @@ html {
   color: #ffffff;
 }
 .nav ul a.activ-nav-link {
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   border-bottom: solid 3px #F1CDB3;
   color: #ffffff;
 }
@@ -191,11 +196,11 @@ header {
 .start-section-wrapper div:first-of-type p {
   margin-top: 43px;
   padding-bottom: 60px;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #cdcdcd;
-  line-height: 1.55em;
+  line-height: 1.56em;
 }
 .start-section-wrapper div:first-of-type .button-container-our-pets {
   margin: 0;
@@ -248,11 +253,11 @@ header {
   line-height: 1.25em;
 }
 .about-shelter-section .text-about-shelter p {
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #4c4c4c;
-  line-height: 24px;
+  line-height: 23.9px;
 }
 .about-shelter-section .text-about-shelter p:first-of-type {
   margin-top: 26px;
@@ -479,7 +484,7 @@ header {
 }
 .donation-section .donation-section-wrapper .info-donation-block p:last-of-type {
   padding-top: 20px;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #B2B2B2;
