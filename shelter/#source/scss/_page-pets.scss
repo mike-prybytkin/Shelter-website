@@ -36,7 +36,7 @@ header {
     .house-name {
         @include font(32px);
         letter-spacing: 2px;
-        margin-bottom: 7px;
+        margin-bottom: 8px;
 
         a{
             text-decoration: none;
@@ -44,7 +44,8 @@ header {
         }
     }
     p:last-of-type {
-        letter-spacing: 0.5px;
+        @include font-arial(13px);
+        letter-spacing: 1.3px;
         color: $dark-color1;
     }
 }
@@ -54,12 +55,13 @@ header {
         margin-bottom: 5px;
         li{
             display: inline;
-            margin: 0 10px 0 15px;
+            margin: 0 15.5px 0 15px;
             letter-spacing: 0.45px;
             }
             a{
+                @include font-arial(15px);
+                letter-spacing: 0.1px;
                 text-decoration: none;
-                @include font(15px);
                 color: $dark-color1;
                 transition: 0.3s;
                 &:hover {
