@@ -7,10 +7,22 @@ footer {
     background-size: cover;
     @include flex(center, center);
 
+    @media (max-width: $desktop-width) {
+        height: 639px;
+    }
+
     .footer-wrapper {
+        width: 1200px;
         height: 100%;
         padding-top: 57px;
         @include flex(space-between, flex-start);
+
+        @media (max-width: $desktop-width) {
+            flex-wrap: wrap;
+            column-gap: 20px;
+            padding-top: 11px;
+            @include flex(center, center);
+        }
         
     
         .bg-dog-footer {
@@ -74,6 +86,10 @@ footer {
             width: 321px;
             @include font(20px, 400, $main-color);
             letter-spacing: 1.2px;
+
+            @media (max-width: $desktop-width) {
+                padding-left: 20px;
+            }
 
             .address-boston {
                 padding-top: 35px;
