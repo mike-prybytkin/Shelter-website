@@ -21,11 +21,16 @@ header {
 }
 
 .header-wrapper-nav {
+    margin: auto;
     margin-top: 30px;
     @include flex(space-between, center);
 
     @media (max-width: $desktop-width) {
-        padding: 0 4% 0 4%;
+        width: 708px;
+    }
+
+    @media (max-width: $tablet-width) {
+        width: 300px;
     }
 }
 
