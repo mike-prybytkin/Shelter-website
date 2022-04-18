@@ -67,6 +67,44 @@
   text-decoration: none;
 }
 
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 8px;
+  margin-right: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+    z-index: 15;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
+}
+
+.burger-menu .line-burger {
+  width: 30px;
+  height: 2px;
+  background-color: #F1CDB3;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#burger-menu.is-active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 body, html {
   height: 100%;
 }
@@ -620,11 +658,6 @@ header {
 }
 @media (max-width: 768px) {
   .how-to-help-section {
-    height: 500px;
-  }
-}
-@media (max-width: 450px) {
-  .how-to-help-section {
     height: 745px;
   }
 }
@@ -663,11 +696,16 @@ header {
 }
 @media (max-width: 1200px) {
   .how-to-help-section .how-to-help-wrapper {
+    width: 630px;
+    margin: auto;
     gap: 55px 60px;
+    margin-top: 61px;
   }
 }
 @media (max-width: 768px) {
   .how-to-help-section .how-to-help-wrapper {
+    width: 290px;
+    margin: auto;
     margin-top: 43px;
     gap: 28px 0px;
     display: -webkit-box;
@@ -679,8 +717,6 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 }
 @media (max-width: 1200px) {
@@ -873,44 +909,6 @@ header {
   }
 }
 
-.burger-menu {
-  width: 30px;
-  height: 22px;
-  cursor: pointer;
-  display: none;
-  margin-bottom: 8px;
-  margin-right: 40px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-@media (max-width: 768px) {
-  .burger-menu {
-    display: block;
-    z-index: 15;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav ul {
-    display: none;
-  }
-}
-
-.burger-menu .line-burger {
-  width: 30px;
-  height: 2px;
-  background-color: #F1CDB3;
-  display: block;
-  margin: 8px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#burger-menu.is-active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 footer {
   height: 350px;
   width: 100%;
@@ -954,6 +952,7 @@ footer .footer-wrapper {
 }
 @media (max-width: 1200px) {
   footer .footer-wrapper {
+    width: 708px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-column-gap: 20px;
@@ -973,6 +972,13 @@ footer .footer-wrapper {
 }
 @media (max-width: 768px) {
   footer .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
     padding-top: 16px;
     width: 100%;
@@ -992,6 +998,9 @@ footer .footer-wrapper .bg-dog-footer {
   footer .footer-wrapper .bg-dog-footer {
     width: 260px;
     height: 269px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 footer .footer-wrapper div {
@@ -1012,6 +1021,11 @@ footer .footer-wrapper div h3 {
     width: 100%;
     letter-spacing: 0.1rem;
     padding-top: 3px;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-wrapper .question-block {
+    margin-top: 12px;
   }
 }
 footer .footer-wrapper .question-block p {
@@ -1058,7 +1072,8 @@ footer .footer-wrapper .adress-block {
 }
 @media (max-width: 768px) {
   footer .footer-wrapper .adress-block {
-    padding-left: 10px;
+    padding-left: 0px;
+    margin-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1073,12 +1088,12 @@ footer .footer-wrapper .adress-block {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 240px;
+    width: 300px;
   }
 }
 @media (max-width: 768px) {
   footer .footer-wrapper .adress-block h3 {
     padding-top: 5px;
-    padding-right: 3%;
     width: 90%;
     line-height: 2rem;
   }
@@ -1098,7 +1113,7 @@ footer .footer-wrapper .adress-block .address-boston {
 }
 @media (max-width: 768px) {
   footer .footer-wrapper .adress-block .address-boston {
-    width: 300px;
+    width: 280px;
     padding-bottom: 7px;
     text-align: left;
     padding-top: 34px;

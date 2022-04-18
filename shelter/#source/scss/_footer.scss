@@ -22,6 +22,7 @@ footer {
         @include flex(space-between, flex-start);
 
         @media (max-width: $desktop-width) {
+            width: 708px;
             flex-wrap: wrap;
             column-gap: 20px;
             padding-top: 11px;
@@ -29,6 +30,8 @@ footer {
         }
 
         @media (max-width: $tablet-width) {
+            flex-direction: column;
+            justify-content: space-between;
             text-align: center;
             padding-top: 16px;
             width: 100%;
@@ -48,6 +51,7 @@ footer {
             @media (max-width: $tablet-width) {
                 width: 260px;
                 height: 269px;
+                align-self: center;
             }
         }
 
@@ -70,6 +74,10 @@ footer {
         }
 
         .question-block {
+            @media (max-width: $tablet-width) {
+                margin-top: 12px;
+            }
+
             p {
                 @include font(20px, 400, $main-color);
                 letter-spacing: 1.3px;
@@ -117,16 +125,17 @@ footer {
             }
 
             @media (max-width: $tablet-width) {
-                padding-left: 10px;
+                padding-left: 0px;
+                margin-bottom: 10px;
                 @include flex (center, flex-start);
                 flex-direction: column;
                 height: 240px;
+                width: 300px;
             }
 
             h3 {
                 @media (max-width: $tablet-width) {
                     padding-top: 5px;
-                    padding-right: 3%;
                     width: 90%;
                     line-height: 2rem;
                 }
@@ -138,7 +147,7 @@ footer {
                 font-style: normal;
 
                 @media (max-width: $tablet-width) {
-                    width: 300px;
+                    width: 280px;
                     padding-bottom: 7px;
                     text-align: left;
                     padding-top: 34px;

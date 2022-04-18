@@ -426,11 +426,11 @@ header {
         height: 779px;
     }
     @media (max-width: $tablet-width) {
-        height: 500px;
-    }
-    @media (max-width: 450px) {
         height: 745px;
     }
+    // @media (max-width: 450px) {
+    //     height: 745px;
+    // }
 
     h2 {
         padding-top: 81px;
@@ -454,14 +454,17 @@ header {
         gap: 55px 120px;
 
         @media (max-width: $desktop-width) {
+            width: 630px;
+            margin: auto;
             gap: 55px 60px;
+            margin-top: 61px;
         }
         @media (max-width: $tablet-width) {
+            width: 290px;
+            margin: auto;
             margin-top: 43px;
             gap: 28px 0px;
             @include flex(space-between, center);
-            margin-left: 5%;
-            margin-right: 5%;
         }
 
         figure {

@@ -93,21 +93,38 @@ main {
     text-align: center;
 
     @media (max-width: $desktop-width) {
-        height: 1342px;
-    }
-    @media (max-width: 910px) {
         height: 1733px;
+    }
+    @media (max-width: $tablet-width) {
+        height: 1649px;
     }
 }
 
 .our-friends-section-wrapper {
     padding-top: 59px;
 
+    @media (max-width: $desktop-width) {
+        width: 600px;
+    }
+
+    @media (max-width: $tablet-width) {
+        padding-top: 0px;
+        width: 100%;
+    }
+
     h1{
         @include font(35px, 400,$dark-color1);
         letter-spacing: 2.1px;
         line-height: 1.25em;
         margin-bottom: 0;
+
+        @media (max-width: $tablet-width) {
+            font-size: 25px;
+            margin: auto;
+            width: 100%;
+            letter-spacing: 0.1rem;
+            padding-top: 43px;
+        }
     }
 
     .slider-our-friends{
@@ -117,6 +134,9 @@ main {
 
         @media (max-width: $desktop-width) {
             margin-top: 15px;
+        }
+        @media (max-width: $tablet-width) {
+            margin-top: 26px;
         }
     }
 
@@ -140,6 +160,13 @@ main {
         & div:nth-child(n+7) {
             display: none;
         }
+    }
+
+    @media (max-width: $tablet-width) {
+        & div:nth-child(n+4) {
+            display: none;
+        }
+        width: 280px;
     }
 
     div{
@@ -190,6 +217,11 @@ main {
         padding-top: 40px;
     }
 
+    @media (max-width: $tablet-width) {
+        column-gap: 10px;
+        padding-top: 43px;
+    }
+
     .two-arr-left,
     .one-arr-left,
     .page-number,
@@ -238,4 +270,8 @@ main {
         background-position: center;
         background-repeat: no-repeat;
     }
+}
+
+.burger-menu .line-burger {
+    background-color: #000000;
 }
