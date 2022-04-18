@@ -93,6 +93,9 @@ main {
     text-align: center;
 
     @media (max-width: $desktop-width) {
+        height: 1342px;
+    }
+    @media (max-width: 910px) {
         height: 1733px;
     }
 }

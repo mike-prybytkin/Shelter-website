@@ -11,6 +11,10 @@ footer {
         height: 639px;
     }
 
+    @media (max-width: $tablet-width) {
+        height: 809px;
+    }
+
     .footer-wrapper {
         width: 1200px;
         height: 100%;
@@ -23,6 +27,12 @@ footer {
             padding-top: 11px;
             @include flex(center, center);
         }
+
+        @media (max-width: $tablet-width) {
+            text-align: center;
+            padding-top: 16px;
+            width: 100%;
+        }
         
     
         .bg-dog-footer {
@@ -32,6 +42,13 @@ footer {
             background-position: center 0px;
             background-repeat: no-repeat;
             align-self: flex-end;
+            background-size: contain;
+            
+
+            @media (max-width: $tablet-width) {
+                width: 260px;
+                height: 269px;
+            }
         }
 
         div {
@@ -41,6 +58,14 @@ footer {
                 @include font(35px, 400, #ffffff);
                 letter-spacing: 2.1px;
                 line-height: 1.25em;
+
+                @media (max-width: $tablet-width) {
+                    font-size: 25px;
+                    margin: auto;
+                    width: 100%;
+                    letter-spacing: 0.1rem;
+                    padding-top: 3px;
+                }
             }
         }
 
@@ -91,10 +116,33 @@ footer {
                 padding-left: 20px;
             }
 
+            @media (max-width: $tablet-width) {
+                padding-left: 10px;
+                @include flex (center, flex-start);
+                flex-direction: column;
+                height: 240px;
+            }
+
+            h3 {
+                @media (max-width: $tablet-width) {
+                    padding-top: 5px;
+                    padding-right: 3%;
+                    width: 90%;
+                    line-height: 2rem;
+                }
+            }
+
             .address-boston {
                 padding-top: 35px;
-                @include flex(flex-start, flex-start);
+                @include flex(flex-start, center);
                 font-style: normal;
+
+                @media (max-width: $tablet-width) {
+                    width: 300px;
+                    padding-bottom: 7px;
+                    text-align: left;
+                    padding-top: 34px;
+                }
 
                 &::before { 
                     margin-top: 5px;
@@ -116,6 +164,12 @@ footer {
 
             & address:last-of-type {
                 padding-top: 37px;
+
+                @media (max-width: $tablet-width) {
+                    text-align: left;
+                    padding-bottom: 2px;
+                    padding-top: 35px;
+                }
 
                 a{
                     text-decoration: none;

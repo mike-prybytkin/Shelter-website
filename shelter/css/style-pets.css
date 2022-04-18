@@ -143,6 +143,11 @@ main {
 }
 @media (max-width: 1200px) {
   .our-friends-section {
+    height: 1342px;
+  }
+}
+@media (max-width: 910px) {
+  .our-friends-section {
     height: 1733px;
   }
 }
@@ -322,6 +327,44 @@ main {
   background-repeat: no-repeat;
 }
 
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 8px;
+  margin-right: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+    z-index: 15;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
+}
+
+.burger-menu .line-burger {
+  width: 30px;
+  height: 2px;
+  background-color: #F1CDB3;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#burger-menu.is-active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 footer {
   height: 350px;
   width: 100%;
@@ -342,6 +385,11 @@ footer {
 @media (max-width: 1200px) {
   footer {
     height: 639px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    height: 809px;
   }
 }
 footer .footer-wrapper {
@@ -377,6 +425,13 @@ footer .footer-wrapper {
             justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  footer .footer-wrapper {
+    text-align: center;
+    padding-top: 16px;
+    width: 100%;
+  }
+}
 footer .footer-wrapper .bg-dog-footer {
   width: 300px;
   height: 310px;
@@ -385,6 +440,13 @@ footer .footer-wrapper .bg-dog-footer {
   background-repeat: no-repeat;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  background-size: contain;
+}
+@media (max-width: 768px) {
+  footer .footer-wrapper .bg-dog-footer {
+    width: 260px;
+    height: 269px;
+  }
 }
 footer .footer-wrapper div {
   width: 300px;
@@ -396,6 +458,15 @@ footer .footer-wrapper div h3 {
   color: #ffffff;
   letter-spacing: 2.1px;
   line-height: 1.25em;
+}
+@media (max-width: 768px) {
+  footer .footer-wrapper div h3 {
+    font-size: 25px;
+    margin: auto;
+    width: 100%;
+    letter-spacing: 0.1rem;
+    padding-top: 3px;
+  }
 }
 footer .footer-wrapper .question-block p {
   font-family: "Georgia", "Times New Roman", Times, serif;
@@ -439,18 +510,53 @@ footer .footer-wrapper .adress-block {
     padding-left: 20px;
   }
 }
+@media (max-width: 768px) {
+  footer .footer-wrapper .adress-block {
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 240px;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-wrapper .adress-block h3 {
+    padding-top: 5px;
+    padding-right: 3%;
+    width: 90%;
+    line-height: 2rem;
+  }
+}
 footer .footer-wrapper .adress-block .address-boston {
   padding-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  footer .footer-wrapper .adress-block .address-boston {
+    width: 300px;
+    padding-bottom: 7px;
+    text-align: left;
+    padding-top: 34px;
+  }
 }
 footer .footer-wrapper .adress-block .address-boston::before {
   margin-top: 5px;
@@ -468,6 +574,13 @@ footer .footer-wrapper .adress-block .address-boston a {
 }
 footer .footer-wrapper .adress-block address:last-of-type {
   padding-top: 37px;
+}
+@media (max-width: 768px) {
+  footer .footer-wrapper .adress-block address:last-of-type {
+    text-align: left;
+    padding-bottom: 2px;
+    padding-top: 35px;
+  }
 }
 footer .footer-wrapper .adress-block address:last-of-type a {
   text-decoration: none;
