@@ -7,10 +7,35 @@ footer {
     background-size: cover;
     @include flex(center, center);
 
+    @media (max-width: $desktop-width) {
+        height: 639px;
+    }
+
+    @media (max-width: $tablet-width) {
+        height: 809px;
+    }
+
     .footer-wrapper {
+        width: 1200px;
         height: 100%;
         padding-top: 57px;
         @include flex(space-between, flex-start);
+
+        @media (max-width: $desktop-width) {
+            width: 708px;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            padding-top: 11px;
+            @include flex(center, center);
+        }
+
+        @media (max-width: $tablet-width) {
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            padding-top: 16px;
+            width: 100%;
+        }
         
     
         .bg-dog-footer {
@@ -20,6 +45,14 @@ footer {
             background-position: center 0px;
             background-repeat: no-repeat;
             align-self: flex-end;
+            background-size: contain;
+            
+
+            @media (max-width: $tablet-width) {
+                width: 260px;
+                height: 269px;
+                align-self: center;
+            }
         }
 
         div {
@@ -29,10 +62,22 @@ footer {
                 @include font(35px, 400, #ffffff);
                 letter-spacing: 2.1px;
                 line-height: 1.25em;
+
+                @media (max-width: $tablet-width) {
+                    font-size: 25px;
+                    margin: auto;
+                    width: 100%;
+                    letter-spacing: 0.1rem;
+                    padding-top: 3px;
+                }
             }
         }
 
         .question-block {
+            @media (max-width: $tablet-width) {
+                margin-top: 12px;
+            }
+
             p {
                 @include font(20px, 400, $main-color);
                 letter-spacing: 1.3px;
@@ -75,10 +120,38 @@ footer {
             @include font(20px, 400, $main-color);
             letter-spacing: 1.2px;
 
+            @media (max-width: $desktop-width) {
+                padding-left: 20px;
+            }
+
+            @media (max-width: $tablet-width) {
+                padding-left: 0px;
+                margin-bottom: 10px;
+                @include flex (center, flex-start);
+                flex-direction: column;
+                height: 240px;
+                width: 300px;
+            }
+
+            h3 {
+                @media (max-width: $tablet-width) {
+                    padding-top: 5px;
+                    width: 90%;
+                    line-height: 2rem;
+                }
+            }
+
             .address-boston {
                 padding-top: 35px;
-                @include flex(flex-start, flex-start);
+                @include flex(flex-start, center);
                 font-style: normal;
+
+                @media (max-width: $tablet-width) {
+                    width: 280px;
+                    padding-bottom: 7px;
+                    text-align: left;
+                    padding-top: 34px;
+                }
 
                 &::before { 
                     margin-top: 5px;
@@ -100,6 +173,12 @@ footer {
 
             & address:last-of-type {
                 padding-top: 37px;
+
+                @media (max-width: $tablet-width) {
+                    text-align: left;
+                    padding-bottom: 2px;
+                    padding-top: 35px;
+                }
 
                 a{
                     text-decoration: none;
