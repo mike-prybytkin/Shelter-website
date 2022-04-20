@@ -20,14 +20,15 @@ header {
 
     @media (max-width: $desktop-width) {
         top: 30px;
-        width: 708px;
-        left: calc((100% - 708px) / 2);
+        padding: 0 4%;
+        // width: 708px;
+        // left: calc((100% - 708px) / 2);
     }
 
-    @media (max-width: $tablet-width) {
-        width: 300px;
-        left: calc((100% - 300px) / 2);
-    }
+    // @media (max-width: $tablet-width) {
+    //     width: 300px;
+    //     left: calc((100% - 300px) / 2);
+    // }
 }
 
 .header-wrapper {
@@ -58,7 +59,7 @@ header {
     }
 }
 
-.nav {
+.nav-wrapper {
     ul{
         margin-bottom: 5px;
         li{
@@ -79,6 +80,10 @@ header {
                     padding-bottom: 4px;
                     border-bottom: solid 3px $main-color;
                     color: #ffffff;
+
+                    @media (max-width: $tablet-width) {
+                        padding-bottom: 6px;
+                    }
                 }
             }
         }

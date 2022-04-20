@@ -9,33 +9,38 @@
     <link rel="icon" href="../assets/icons/favico.png" type="image/x-icon">
     <title>Shelter</title>
 </head>
-<body>
-   <header>
+<body class="body">
+   <header class="header">
+    <div class="modal-window-nav"></div>
         <div class="header-wrapper">
             <div class="main-words">
                 <p class="house-name"><a href="#">Cozy House</a></p>
                 <p>Shelter for pets in Boston</p>
             </div>
-            <div class="nav">
-                    <nav>
-                        <ul>
-                            <li><a class="activ-nav-link" href="#">About the shelter</a></li>
-                            <li><a href="pets.html">Our pets</a></li>
-                            <li><a href="#help">Help the shelter</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
-                        <div class="burger-menu" id="burger-menu">
-                            <span class="line-burger"></span>
-                            <span class="line-burger"></span>
-                            <span class="line-burger"></span>
-                        </div>
-                    </nav>
+            <div class="nav-wrapper">
+                <nav class="nav">
+                    <div class="main-words main-words-nav">
+                        <p class="house-name"><a href="#">Cozy House</a></p>
+                        <p>Shelter for pets in Boston</p>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link activ-nav-link" href="#">About the shelter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pets.html">Our pets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#help">Help the shelter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu" id="burger-menu">
+                    <span class="line-burger"></span>
+                    <span class="line-burger"></span>
+                    <span class="line-burger"></span>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-       <section class="start-section">
+        <section class="start-section">
             <div class="start-section-wrapper">
                 <div>
                     <h1>Not only people need a house</h1>
@@ -169,5 +174,6 @@
             <div class="bg-dog-footer"></div>
         </div>
     </footer>
+    <script src="../js/burger-script.js"></script>
 </body>
 </html>

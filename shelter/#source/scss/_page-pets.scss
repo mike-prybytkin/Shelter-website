@@ -23,15 +23,17 @@ header {
 .header-wrapper-nav {
     margin: auto;
     margin-top: 30px;
+    // padding: 0 4%;
     @include flex(space-between, center);
 
     @media (max-width: $desktop-width) {
-        width: 708px;
+        padding: 0 4%;
+        // width: 708px;
     }
 
-    @media (max-width: $tablet-width) {
-        width: 300px;
-    }
+    // @media (max-width: $tablet-width) {
+    //     width: 300px;
+    // }
 }
 
 .main-words {
@@ -59,7 +61,7 @@ header {
     }
 }
 
-.nav {
+.nav-wrapper {
     ul{
         margin-bottom: 5px;
         li{
@@ -73,13 +75,26 @@ header {
                 text-decoration: none;
                 color: $dark-color1;
                 transition: 0.3s;
+
+                @media (max-width: $tablet-width) {
+                    color: #cdcdcd;
+                }
                 &:hover {
                     color: $dark-color2;
+
+                    @media (max-width: $tablet-width) {
+                        color: #ffffff;
+                    }
                 }
                 &.activ-nav-link {
                     padding-bottom: 3px;
                     border-bottom: solid 3px $main-color;
                     color: $dark-color2;
+
+                    @media (max-width: $tablet-width) {
+                        color: #ffffff;
+                        padding-bottom: 6px;
+                    }
                 }
             }
         }
@@ -278,5 +293,13 @@ main {
 }
 
 .burger-menu .line-burger {
-    background-color: #000000;
+    background-color: #000000 !important;
+}
+
+.burger-menu.is-active .line-burger {
+    background-color: $main-color !important;
+}
+
+.burger-menu.is-active {
+    top: 0 !important;
 }
