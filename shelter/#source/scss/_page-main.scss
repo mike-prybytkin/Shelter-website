@@ -305,20 +305,20 @@ header {
 
     .slider-our-friends{
         margin-top: 61px;
-        @include flex(center, center);
-        column-gap: 15.9%;
+        width: 1200px;
+        @include flex(space-between, center);
 
-        @media (max-width: 1230px) {
-            column-gap: 9%;
+        @media (max-width: $desktop-width) {
+            width: 708px;
         }
-        @media (max-width: 1000px) {
-            column-gap: 5%;
-        }
+
         @media (max-width: $tablet-width) {
+            justify-content: center;
+            width: 270px;
             margin-top: 43px;
             flex-wrap: wrap;
             row-gap: 17px;
-            column-gap: 25%;
+            column-gap: 30%;
         }
 
         & div:first-child {
@@ -350,29 +350,42 @@ header {
             }
         }
 
-        .pets-photos-slider {
-            @include flex(center, center);
-            column-gap: 11%;
+        .pets-photos-slider-wrapper {
+            margin: auto;
+            width: 990px;
+            overflow: hidden;
 
             @media (max-width: $desktop-width) {
-                column-gap: 7%;
-                & div:last-child {
-                    display: none;
-                }
+                width: 580px;
             }
 
             @media (max-width: $tablet-width) {
-                & div:nth-child(n+2) {
-                    display: none;
-                }
+                width: 270px;
             }
 
-            div {
-                text-align: center;
+            .pets-photos-slider {
+                position: relative;
+                left: -1075px;
+                @include flex(flex-start center);
+                column-gap: 9%;
+
+                @media (max-width: $desktop-width) {
+                    left: -930px;
+                    column-gap: 7%;
+                }
+
+                @media (max-width: $tablet-width) {
+                    left: -810px;
+                    column-gap: 0%;
+                }
+
+                div {
+                    text-align: center;
+                }
             }
         }
     }
-    
+        
     .button-container-get-the-rest {
         margin-top: 77px;
         padding: 0;
@@ -416,7 +429,7 @@ header {
 .pets-photos-slider {
     div:hover {
         cursor: pointer;
-        box-shadow: 0px 0px 15px #00000063;
+        // box-shadow: 0px 0px 10px #00000063 inset;
         background-color: #ffffff;
         button {
             background-color: #FDDCC4;

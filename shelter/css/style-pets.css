@@ -39,6 +39,150 @@
   transition: 0.4s;
 }
 
+@-webkit-keyframes move-right-1200 {
+  from {
+    left: -1075px;
+  }
+  to {
+    left: -2150px;
+  }
+}
+
+@keyframes move-right-1200 {
+  from {
+    left: -1075px;
+  }
+  to {
+    left: -2150px;
+  }
+}
+@-webkit-keyframes move-right-768 {
+  from {
+    left: -930px;
+  }
+  to {
+    left: -1860px;
+  }
+}
+@keyframes move-right-768 {
+  from {
+    left: -930px;
+  }
+  to {
+    left: -1860px;
+  }
+}
+@-webkit-keyframes move-right-320 {
+  from {
+    left: -540px;
+  }
+  to {
+    left: -1620px;
+  }
+}
+@keyframes move-right-320 {
+  from {
+    left: -540px;
+  }
+  to {
+    left: -1620px;
+  }
+}
+.transition-right {
+  -webkit-animation-name: move-right-1200;
+          animation-name: move-right-1200;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+@media (max-width: 1279px) {
+  .transition-right {
+    -webkit-animation-name: move-right-768;
+            animation-name: move-right-768;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+  }
+}
+@media (max-width: 767px) {
+  .transition-right {
+    -webkit-animation-name: move-right-320;
+            animation-name: move-right-320;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+  }
+}
+
+@-webkit-keyframes move-left-1200 {
+  from {
+    left: -1075px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes move-left-1200 {
+  from {
+    left: -1075px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@-webkit-keyframes move-left-768 {
+  from {
+    left: -620px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes move-left-768 {
+  from {
+    left: -620px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@-webkit-keyframes move-left-320 {
+  from {
+    left: -620px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes move-left-320 {
+  from {
+    left: -620px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.transition-left {
+  -webkit-animation-name: move-left-1200;
+          animation-name: move-left-1200;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+@media (max-width: 1279px) {
+  .transition-left {
+    -webkit-animation-name: move-left-768;
+            animation-name: move-left-768;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+  }
+}
+@media (max-width: 767px) {
+  .transition-left {
+    -webkit-animation-name: move-left-320;
+            animation-name: move-left-320;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+  }
+}
+
 body, html {
   height: 100%;
 }
@@ -61,12 +205,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1279px) {
   .header-wrapper-nav {
@@ -206,12 +350,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -231,12 +375,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 0px;
@@ -247,12 +391,12 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-column-gap: 39px;
        -moz-column-gap: 39px;
             column-gap: 39px;
@@ -319,12 +463,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
@@ -404,12 +548,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1279px) {
   footer {
@@ -428,12 +572,12 @@ footer .footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media (max-width: 1279px) {
   footer .footer-wrapper {
@@ -447,12 +591,12 @@ footer .footer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 767px) {
@@ -562,12 +706,12 @@ footer .footer-wrapper .adress-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -588,12 +732,12 @@ footer .footer-wrapper .adress-block .address-boston {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-style: normal;
 }
 @media (max-width: 767px) {
@@ -696,6 +840,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
     right: -320px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    overflow: auto;
   }
   .nav .main-words.main-words-nav {
     text-align: left;
@@ -714,12 +859,12 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -745,7 +890,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 }
 
 .modal-window-nav {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   background: #29292999;

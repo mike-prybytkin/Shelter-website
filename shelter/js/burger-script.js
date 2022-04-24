@@ -1,3 +1,7 @@
+//---
+// BURGER-MENU realization
+//---
+
 const body = document.querySelector('.body');
 const nav = document.querySelector('.nav');
 const burgerMenu = document.querySelector('.burger-menu');
