@@ -4,19 +4,16 @@
     cursor: pointer;
     display: none;
     margin-bottom: 8px;
-    margin-right: 43px;
+    margin-right: 40px;
     transition: all 0.3s ease-in-out;
 
     @media (max-width: $tablet-width) {
+        position: relative;
         display: block;
-        z-index: 15;
-    }
-}
+        z-index: 1;
 
-.nav {
-    ul {
-        @media (max-width: $tablet-width) {
-            display: none;
+        &.is-active {
+            top: 30px;
         }
     }
 }
@@ -35,40 +32,87 @@
 // }
 
 #burger-menu.is-active {
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
 }
 
-    //burger-menu realization
+.main-words.hidden {
+    visibility: hidden;
+}
 
-    //  .body.is-active {
-    //     overflow-y: hidden;
-    //     z-index: -5;
-    // }
+.main-words.main-words-nav {
+    @media(min-width: $tablet-width) {
+        display: none;
+    }
+}
 
-    // .header .nav-item a {
-    //     font-size: 34px;
-    //     line-height: 74px;
-    // }
+.nav {
+    @media (max-width: $tablet-width) {
+        background: $dark-color2;
+        width: 320px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -320px;
+        transition: all 0.3s;
+        overflow: auto;
 
-    // .nav {
-    //     z-index: 10;
-    //     position: fixed;
-    //     right: -620px;
-    //     gap: 0;
-    //     top: 0;
-    //     background-color: #000000;
-    //     width: 620px;
-    //     height: 100%;
-    //     transition: all 0.3s;
-    // }
+        .main-words.main-words-nav {
+            text-align: left;
+            padding-top: 30px;
+            padding-left: 10px;
 
-    // .nav-list {
-    //     flex-direction: column;
-    //     margin-top: 110px;
-    //     margin-left: 100px;
-    //     position: absolute;
-    // }
+            a{
+                text-decoration: none;
+                color: $main-color;
+            }
 
-    // .nav.is-active {
-    //     right: 0;
-    // }
+            & p:last-child {
+                padding-left: 4px;
+                color: #ffffff;
+            }
+        }
+
+        ul {
+            @include flex (center, center);
+            flex-direction: column;
+            row-gap: 55px;
+            margin-top: 167px;
+            li {
+                margin: 0;
+                a {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+.nav.is-active {
+    right: 0;
+    z-index: 1;
+}
+
+.body.is-active {
+    overflow-y: hidden;
+}
+
+.modal-window-nav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #29292999;
+    left: 0;
+    z-index: 0;
+    display: none;
+    transition: all 0.3s;
+
+    &.is-active {
+        display: block;
+    }
+}
+
+.header {
+    &.is-active {
+        top: 0;
+    }
+}

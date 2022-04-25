@@ -9,33 +9,38 @@
     <link rel="icon" href="../assets/icons/favico.png" type="image/x-icon">
     <title>Shelter</title>
 </head>
-<body>
-   <header>
+<body class="body">
+   <header class="header">
+    <div class="modal-window-nav"></div>
         <div class="header-wrapper">
             <div class="main-words">
                 <p class="house-name"><a href="#">Cozy House</a></p>
                 <p>Shelter for pets in Boston</p>
             </div>
-            <div class="nav">
-                    <nav>
-                        <ul>
-                            <li><a class="activ-nav-link" href="#">About the shelter</a></li>
-                            <li><a href="pets.html">Our pets</a></li>
-                            <li><a href="#help">Help the shelter</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
-                        <div class="burger-menu" id="burger-menu">
-                            <span class="line-burger"></span>
-                            <span class="line-burger"></span>
-                            <span class="line-burger"></span>
-                        </div>
-                    </nav>
+            <div class="nav-wrapper">
+                <nav class="nav">
+                    <div class="main-words main-words-nav">
+                        <p class="house-name"><a class="nav-link" href="#">Cozy House</a></p>
+                        <p>Shelter for pets in Boston</p>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link activ-nav-link" href="#">About the shelter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pets.html">Our pets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#help">Help the shelter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu" id="burger-menu">
+                    <span class="line-burger"></span>
+                    <span class="line-burger"></span>
+                    <span class="line-burger"></span>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-       <section class="start-section">
+        <section class="start-section">
             <div class="start-section-wrapper">
                 <div>
                     <h1>Not only people need a house</h1>
@@ -61,29 +66,73 @@
                 <h2>Our friends who<br>are looking for a house</h2>
                 <div class="slider-our-friends">
                     <div><button class="left-butt-slider"></button></div>
-                    <div class="pets-photos-slider">
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-katrine.png" alt="Katrine" title="cat">
-                                <figcaption>Katrine</figcaption>
-                            </figure>
-                            <button>Learn more</button>
+                        <div class="pets-photos-slider-wrapper">
+                            <div class="pets-photos-slider" id="pets-photos-slider">
+                                <div class="item-slider">
+                                    <figure data-id = '4'>
+                                        <img src="../assets/images/pets-katrine.png" alt="Katrine">
+                                        <figcaption>Katrine</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider">
+                                    <figure data-id = '0'>
+                                        <img src="../assets/images/pets-jennifer.png" alt="Jennifer">
+                                        <figcaption>Jennifer</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider">
+                                    <figure data-id = '2'>
+                                        <img src="../assets/images/pets-woody.png" alt="Woody">
+                                        <figcaption>Woody</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider">
+                                    <figure data-id = '1'>
+                                        <img src="../assets/images/pets-sophia.png" alt="Sophia">
+                                        <figcaption>Sophia</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider test">
+                                    <figure data-id = '5'>
+                                        <img src="../assets/images/pets-timmy.png" alt="Timmy">
+                                        <figcaption>Timmy</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider">
+                                    <figure data-id = '7'>
+                                        <img src="../assets/images/pets-charly.png" alt="Charly">
+                                        <figcaption>Charly</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider">
+                                    <figure data-id = '3'>
+                                        <img src="../assets/images/pets-scarlett.png" alt="Scarlett">
+                                        <figcaption>Scarlett</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider">
+                                    <figure data-id = '6'>
+                                        <img src="../assets/images/pets-freddie.png" alt="Freddie">
+                                        <figcaption>Freddie</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                                <div class="item-slider">
+                                    <figure data-id = '4'>
+                                        <img src="../assets/images/pets-katrine.png" alt="Katrine">
+                                        <figcaption>Katrine</figcaption>
+                                    </figure>
+                                    <button>Learn more</button>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-jennifer.png" alt="Jennifer" title="dog">
-                                <figcaption>Jennifer</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-woody.png" alt="Woody" title="dog">
-                                <figcaption>Woody</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                    </div>
                     <div><button class="right-butt-slider"></button></div>
                 </div>
                 <div class="button-container-get-the-rest">
@@ -169,5 +218,29 @@
             <div class="bg-dog-footer"></div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <div class="image">
+                    <img src="../assets/images/m-500-jennifer.png" alt="Jennifer">
+                </div>
+                <div class="descriptions">
+                    <h3>Jennifer</h3>
+                    <p class="type">Dog &mdash; Labrador</p>
+                    <p class="about">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever    home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                    <ul>
+                        <li><span>Age:</span> 2 months</li>
+                        <li><span>Inoculations: none</span></li>
+                        <li><span>Diseases:</span> none</li>
+                        <li><span>Parasites:</span> none</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="popup-close">&times;</button>
+        </div>
+    </div>
+    <script src="../js/burger-script.js"></script>
+    <script type="module" src="../js/slider-main.js"></script>
+    <script type="module" src="../js/popup.js"></script>
 </body>
 </html>
