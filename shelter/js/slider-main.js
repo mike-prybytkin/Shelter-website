@@ -24,7 +24,6 @@ function moveRight() {
 
 
 const itemSlider = document.getElementById('pets-photos-slider');
-const dataIdClass = document.querySelectorAll('.data-id');
 const listChildren = itemSlider.children;
 
 const LEFT_SLIDE_1 = listChildren[0];

@@ -21,14 +21,7 @@ header {
     @media (max-width: $desktop-width) {
         top: 30px;
         padding: 0 4%;
-        // width: 708px;
-        // left: calc((100% - 708px) / 2);
     }
-
-    // @media (max-width: $tablet-width) {
-    //     width: 300px;
-    //     left: calc((100% - 300px) / 2);
-    // }
 }
 
 .header-wrapper {
@@ -181,7 +174,6 @@ header {
             @media (max-width: $desktop-width) {
                 width: 569px;
                 height: 593px;
-                // background-size: contain;
                 margin-left: 144px;
             }
 

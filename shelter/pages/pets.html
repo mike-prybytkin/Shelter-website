@@ -26,7 +26,7 @@
                         </div>
                         <ul>
                             <li class="nav-item"><a class="nav-link" href="main.html">About the shelter</a></li>
-                            <li class="nav-item"><a class="nav-link activ-nav-link" href="pets.html">Our pets</a></li>
+                            <li class="nav-item"><a class="nav-link activ-nav-link" href="#">Our pets</a></li>
                             <li class="nav-item"><a class="nav-link" href="main.html#help">Help the shelter</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
                         </ul>
@@ -45,72 +45,17 @@
         <section class="our-friends-section" id="our-pets">
             <div class="our-friends-section-wrapper">
                 <h1>Our friends who<br>are looking for a house</h1>
-                <div class="slider-our-friends">
-                    <div class="pets-photos-slider">
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-katrine.png" alt="Katrine" title="cat">
-                                <figcaption>Katrine</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-jennifer.png" alt="Jennifer" title="dog">
-                                <figcaption>Jennifer</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-woody.png" alt="Woody" title="dog">
-                                <figcaption>Woody</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-sophia.png" alt="Sophia title="dog">
-                                <figcaption>Sophia</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-timmy.png" alt="Timmy" title="cat">
-                                <figcaption>Timmy</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-charly.png" alt="Charly" title="dog">
-                                <figcaption>Charly</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-scarlett.png" alt="Scarlett" title="dog">
-                                <figcaption>Scarlett</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="../assets/images/pets-freddie.png" alt="Freddie" title="cat">
-                                <figcaption>Freddie</figcaption>
-                            </figure>
-                            <button>Learn more</button>
-                        </div>
+                <div class="pets-photos-slider-wrapper">
+                    <div class="pets-photos-slider" id="pets-photos-slider">
+                        <!-- slider at here -->
                     </div>
                 </div>
                 <div class="button-container-slider">
-                    <button class="two-arr-left disabled"></button>
-                    <button class="one-arr-left disabled"></button>
-                    <button class="page-number active-butt">1</button>
-                    <button class="one-arr-right"></button>
-                    <button class="two-arr-right"></button>
+                    <button class="two-arr-left disabled" disabled = ""><img src="../assets/images/svg/arr-2.svg" alt="back fast scroll"></button>
+                    <button class="one-arr-left disabled" disabled = ""><img src="../assets/images/svg/arr-1.svg" alt="back scroll"></button>
+                    <button class="page-number" disabled = "">1</button>
+                    <button class="one-arr-right active-butt"><img src="../assets/images/svg/arr-1.svg" alt="forward scroll"></button>
+                    <button class="two-arr-right active-butt"><img src="../assets/images/svg/arr-2.svg" alt="forward fast scroll"></button>
                 </div>
             </div>
         </section>
@@ -137,5 +82,6 @@
         </div>
     </footer>
     <script src="../js/burger-script.js"></script>
+    <script type="module" src="../js/slider-pets.js"></script>
 </body>
 </html>
