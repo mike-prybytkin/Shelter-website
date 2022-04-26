@@ -94,6 +94,7 @@
 
 .body.is-active {
     overflow-y: hidden;
+    padding-right: 22px;
 }
 
 .modal-window-nav {
@@ -104,7 +105,6 @@
     left: 0;
     z-index: 0;
     display: none;
-    transition: all 0.3s;
 
     &.is-active {
         display: block;

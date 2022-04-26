@@ -31,6 +31,7 @@ header {
 
 .main-words {
     text-align: center;
+    
     .house-name {
         @include font(32px);
         letter-spacing: 2px;

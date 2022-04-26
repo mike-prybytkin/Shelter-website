@@ -1373,6 +1373,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 
 .body.is-active {
   overflow-y: hidden;
+  padding-right: 22px;
 }
 
 .modal-window-nav {
@@ -1383,8 +1384,6 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   left: 0;
   z-index: 0;
   display: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .modal-window-nav.is-active {
   display: block;
@@ -1397,8 +1396,8 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 .popup {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1408,7 +1407,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   overflow: auto;
 }
 .popup:hover .popup-close {
-  border: 4px solid #F1CDB3;
+  border: 6px solid #F1CDB3;
 }
 .popup.open {
   opacity: 1;
@@ -1429,8 +1428,9 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   height: 500px;
   left: calc(50vw - (900px / 2));
   top: calc(50vh - (500px / 2));
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 .popup .popup-body:hover .popup-close {
   border: 2px solid #F1CDB3;
@@ -1446,9 +1446,9 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 @media (max-width: 767px) {
   .popup .popup-body {
     width: 240px;
-    height: 341px;
+    height: 360px;
     left: calc(50vw - (240px / 2));
-    top: calc(50vh - (341px / 2));
+    top: calc(50vh - (360px / 2));
   }
 }
 .popup .popup-body .popup-close {
@@ -1461,7 +1461,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   color: #fafafa;
 }
 .popup .popup-body .popup-close:hover {
-  border: 4px solid #F1CDB3;
+  border: 6px solid #F1CDB3;
 }
 @media (max-width: 1279px) {
   .popup .popup-body .popup-close {
@@ -1504,30 +1504,34 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 }
 @media (max-width: 767px) {
   .popup .popup-body .popup-content {
-    width: 240px;
-    height: 341px;
+    width: 250px;
+    height: 360px;
     -webkit-column-gap: 0px;
        -moz-column-gap: 0px;
             column-gap: 0px;
   }
 }
-.popup .popup-body .popup-content .image img {
-  width: 495px;
-  height: 495px;
+.popup .popup-body .popup-content .image-pet-modal {
+  width: 500px;
+  height: 500px;
+  background: url(../assets/images/m-500-jennifer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 9px;
 }
 @media (max-width: 1279px) {
-  .popup .popup-body .popup-content .image img {
-    width: 345px;
-    height: 345px;
+  .popup .popup-body .popup-content .image-pet-modal {
+    width: 350px;
+    height: 350px;
   }
 }
 @media (max-width: 767px) {
-  .popup .popup-body .popup-content .image img {
+  .popup .popup-body .popup-content .image-pet-modal {
     display: none;
   }
 }
 .popup .popup-body .popup-content .descriptions {
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1563,6 +1567,8 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   color: #000000;
 }
 .popup .popup-body .popup-content .descriptions .about {
+  height: 140px;
+  overflow: auto;
   margin-top: 40px;
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 15px;
@@ -1573,6 +1579,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 }
 @media (max-width: 1279px) {
   .popup .popup-body .popup-content .descriptions .about {
+    height: 120px;
     font-size: 13px;
     margin-top: 15px;
   }
@@ -1608,4 +1615,9 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 }
 .popup .popup-body .popup-content .descriptions ul li span {
   font-weight: bold;
+}
+
+.header.popup-is-open {
+  z-index: 0;
+  padding-right: 22px;
 }
