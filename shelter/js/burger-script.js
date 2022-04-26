@@ -7,7 +7,6 @@ const nav = document.querySelector('.nav');
 const burgerMenu = document.querySelector('.burger-menu');
 const mainWords = document.querySelector('.main-words');
 const modalWindowNav = document.querySelector('.modal-window-nav');
-const header = document.querySelector('.header');
 const navLinks = document.querySelectorAll('.nav-link');
 
 function toggleMenu() {
@@ -16,7 +15,6 @@ function toggleMenu() {
     body.classList.toggle('is-active');
     mainWords.classList.toggle('hidden');
     modalWindowNav.classList.toggle('is-active');
-    header.classList.toggle('is-active');
 }
 
 burgerMenu.addEventListener('click', toggleMenu);
@@ -33,6 +31,5 @@ function closeMenu(event) {
         body.classList.remove('is-active');
         mainWords.classList.remove('hidden');
         modalWindowNav.classList.remove('is-active');
-        header.classList.remove('is-active');
     }
 };
