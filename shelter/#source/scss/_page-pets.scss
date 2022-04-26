@@ -39,6 +39,9 @@ header {
 
 .main-words {
     text-align: center;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
 
     p{
         margin: 0;

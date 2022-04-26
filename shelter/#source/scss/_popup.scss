@@ -10,7 +10,7 @@
     left: 0;
     overflow: auto;
         &:hover .popup-close {
-            border: 6px solid $main-color;
+            background-color: $main-color;
         }
 
         &.open {
@@ -28,7 +28,7 @@
         transition: all 0.3s ease-in-out;
         z-index: 1;
             &:hover .popup-close {
-                border: 2px solid $main-color;
+                background-color: transparent;
             }
 
         @media (max-width: $desktop-width) {
@@ -51,11 +51,10 @@
             top:-50px;
             align-self: flex-start;
             @extend %butt-circle;
-            font-size: 25px;
-            // color: $dark-color2;
-            color: #fafafa;
+            font-size: 28px;
+            color: $dark-color2;
                 &:hover {
-                    border: 6px solid $main-color;
+                    background-color: $main-color;
                 }
 
             @media (max-width: $desktop-width) {

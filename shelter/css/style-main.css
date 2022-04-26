@@ -245,6 +245,10 @@ header {
 
 .main-words {
   text-align: center;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .main-words .house-name {
   font-family: "Georgia", "Times New Roman", Times, serif;
@@ -1286,9 +1290,6 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
     display: block;
     z-index: 1;
   }
-  .burger-menu.is-active {
-    top: 30px;
-  }
 }
 
 .burger-menu .line-burger {
@@ -1307,9 +1308,15 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
 }
 
 .main-words.hidden {
+  opacity: 0;
   visibility: hidden;
 }
 
+.main-words.main-words-nav {
+  position: fixed;
+  width: 295px;
+  background: #292929;
+}
 @media (min-width: 767px) {
   .main-words.main-words-nav {
     display: none;
@@ -1382,15 +1389,12 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   position: fixed;
   background: #29292999;
   left: 0;
+  top: 0;
   z-index: 0;
   display: none;
 }
 .modal-window-nav.is-active {
   display: block;
-}
-
-.header.is-active {
-  top: 0;
 }
 
 .popup {
@@ -1407,7 +1411,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   overflow: auto;
 }
 .popup:hover .popup-close {
-  border: 6px solid #F1CDB3;
+  background-color: #F1CDB3;
 }
 .popup.open {
   opacity: 1;
@@ -1433,7 +1437,7 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   z-index: 1;
 }
 .popup .popup-body:hover .popup-close {
-  border: 2px solid #F1CDB3;
+  background-color: transparent;
 }
 @media (max-width: 1279px) {
   .popup .popup-body {
@@ -1457,11 +1461,11 @@ footer .footer-wrapper .adress-block address:last-of-type a::before {
   top: -50px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-size: 25px;
-  color: #fafafa;
+  font-size: 28px;
+  color: #292929;
 }
 .popup .popup-body .popup-close:hover {
-  border: 6px solid #F1CDB3;
+  background-color: #F1CDB3;
 }
 @media (max-width: 1279px) {
   .popup .popup-body .popup-close {

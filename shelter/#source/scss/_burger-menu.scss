@@ -11,10 +11,6 @@
         position: relative;
         display: block;
         z-index: 1;
-
-        &.is-active {
-            top: 30px;
-        }
     }
 }
 
@@ -36,10 +32,14 @@
 }
 
 .main-words.hidden {
+    opacity: 0;
     visibility: hidden;
 }
 
 .main-words.main-words-nav {
+    position: fixed;
+    width: 295px;
+    background: $dark-color2;
     @media(min-width: $tablet-width) {
         display: none;
     }
@@ -103,16 +103,11 @@
     position: fixed;
     background: #29292999;
     left: 0;
+    top: 0;
     z-index: 0;
     display: none;
 
     &.is-active {
         display: block;
-    }
-}
-
-.header {
-    &.is-active {
-        top: 0;
     }
 }
