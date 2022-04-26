@@ -185,27 +185,33 @@ BTN_LEFT.addEventListener('click', moveLeft);
 BTN_RIGHT.addEventListener('click', moveRight);
 
 function moveRight() {
+    counter++;
+
     if (document.documentElement.clientWidth >= 1280) {
         if(counter < ARR_ID_1280.length - 1) {
             setTimeout(() => createPage(counter), setDuration);
+            console.log(counter)
         } else {
+            setTimeout(() => createPage(ARR_ID_1280.length-1), setDuration);
             finishMoveRight();
         }
     } else if (document.documentElement.clientWidth < 1280 && document.documentElement.clientWidth >= 768) {
         if(counter < ARR_ID_768.length - 1) {
             setTimeout(() => createPage(counter), setDuration);
         } else {
+            setTimeout(() => createPage(ARR_ID_768.length-1), setDuration);
             finishMoveRight();
         }
     } else {
         if(counter < ARR_ID_320.length - 1) {
             setTimeout(() => createPage(counter), setDuration);
         } else {
+            setTimeout(() => createPage(ARR_ID_320.length-1), setDuration);
             finishMoveRight();
         }
     }
 
-    counter++;
+    // counter++;
     pageNum.innerHTML = counter + 1;
     
     BTN_LEFT.removeAttribute("disabled");
