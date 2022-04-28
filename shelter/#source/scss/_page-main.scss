@@ -366,17 +366,29 @@ header {
                 column-gap: 9%;
 
                 @media (max-width: $desktop-width) {
-                    left: -930px;
+                    left: -620px;
                     column-gap: 7%;
                 }
 
                 @media (max-width: $tablet-width) {
-                    left: -810px;
+                    left: -270px;
                     column-gap: 0%;
                 }
 
-                div {
+                .item-slider {
                     text-align: center;
+
+                    @media (max-width: $desktop-width) {
+                        &:nth-child(3n + 1) {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: $tablet-width) {
+                        &:nth-child(3n + 2) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
