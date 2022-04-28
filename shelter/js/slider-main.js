@@ -7,6 +7,67 @@ const PETS_PHOTOS_SLIDER = document.querySelector('.pets-photos-slider');
 const BTN_LEFT = document.querySelector('.left-butt-slider');
 const BTN_RIGHT = document.querySelector('.right-butt-slider');
 
+// ---create ID---
+// for 9 cards
+
+const numCards = 3;
+const ARR_ID = [[], [], []];
+// second arr
+while (ARR_ID[1].length < numCards) {
+  let randomNum = (Math.floor(Math.random() * PETS_LIST.length)).toString();
+  if (!ARR_ID[1].includes(randomNum)) {
+      ARR_ID[1].push(randomNum);
+  }
+};
+// first arr with compare ARR_ID[1]
+while (ARR_ID[0].length < numCards) {
+  let randomNum = (Math.floor(Math.random() * PETS_LIST.length)).toString();
+  if (!ARR_ID[0].includes(randomNum) && !ARR_ID[1].includes(randomNum)) {
+      ARR_ID[0].push(randomNum);
+  }
+};
+// third arr with compare ARR_ID[1]
+while (ARR_ID[2].length < numCards) {
+  let randomNum = (Math.floor(Math.random() * PETS_LIST.length)).toString();
+  if (!ARR_ID[2].includes(randomNum) && !ARR_ID[1].includes(randomNum)) {
+      ARR_ID[2].push(randomNum);
+  }
+};
+
+// create div-wrappers be cards
+
+const createDiv = () => {
+    let amountDiv = 9;
+
+    for(let i = 0; i < amountDiv; i++){
+        let div = document.createElement('div');
+        div.className = 'item-slider';
+        PETS_PHOTOS_SLIDER.appendChild(div)
+    }
+}
+createDiv();
+
+const itemSlider = document.getElementById('pets-photos-slider');
+const listChildren = itemSlider.children;
+
+const createPage = () => {
+    const allId = ARR_ID.flat();
+    for(let i = 0; i < listChildren.length; i++){
+        listChildren[i].innerHTML = '';
+        listChildren[i].innerHTML += 
+        `
+            <figure class="data-id" data-id = ${PETS_LIST[allId[i]]['id']}>
+                <img src="${PETS_LIST[allId[i]]['img']}" alt="${PETS_LIST[allId[i]]['name']}">
+                <figcaption>${PETS_LIST[allId[i]]['name']}</figcaption>
+            </figure>
+            <button>Learn more</button>
+        `;
+    }
+};
+createPage();
+
+//---
+
 BTN_LEFT.addEventListener('click', moveLeft);
 BTN_RIGHT.addEventListener('click', moveRight);
 
@@ -23,8 +84,6 @@ function moveRight() {
 }
 
 
-const itemSlider = document.getElementById('pets-photos-slider');
-const listChildren = itemSlider.children;
 
 const LEFT_SLIDE_1 = listChildren[0];
 const LEFT_SLIDE_2 = listChildren[1];
