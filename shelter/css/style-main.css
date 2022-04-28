@@ -86,34 +86,34 @@
 }
 @-webkit-keyframes move-right-768 {
   from {
-    left: -930px;
+    left: -620px;
   }
   to {
-    left: -1860px;
+    left: -1240px;
   }
 }
 @keyframes move-right-768 {
   from {
-    left: -930px;
+    left: -620px;
   }
   to {
-    left: -1860px;
+    left: -1240px;
   }
 }
 @-webkit-keyframes move-right-320 {
   from {
-    left: -540px;
+    left: -270px;
   }
   to {
-    left: -1620px;
+    left: -540px;
   }
 }
 @keyframes move-right-320 {
   from {
-    left: -540px;
+    left: -270px;
   }
   to {
-    left: -1620px;
+    left: -540px;
   }
 }
 .transition-right {
@@ -174,7 +174,7 @@
 }
 @-webkit-keyframes move-left-320 {
   from {
-    left: -620px;
+    left: -270px;
   }
   to {
     left: 0px;
@@ -182,7 +182,7 @@
 }
 @keyframes move-left-320 {
   from {
-    left: -620px;
+    left: -270px;
   }
   to {
     left: 0px;
@@ -701,7 +701,7 @@ header {
 }
 @media (max-width: 1279px) {
   .our-friends-section-wrapper .slider-our-friends .pets-photos-slider-wrapper .pets-photos-slider {
-    left: -930px;
+    left: -620px;
     -webkit-column-gap: 7%;
        -moz-column-gap: 7%;
             column-gap: 7%;
@@ -709,14 +709,24 @@ header {
 }
 @media (max-width: 767px) {
   .our-friends-section-wrapper .slider-our-friends .pets-photos-slider-wrapper .pets-photos-slider {
-    left: -810px;
+    left: -270px;
     -webkit-column-gap: 0%;
        -moz-column-gap: 0%;
             column-gap: 0%;
   }
 }
-.our-friends-section-wrapper .slider-our-friends .pets-photos-slider-wrapper .pets-photos-slider div {
+.our-friends-section-wrapper .slider-our-friends .pets-photos-slider-wrapper .pets-photos-slider .item-slider {
   text-align: center;
+}
+@media (max-width: 1279px) {
+  .our-friends-section-wrapper .slider-our-friends .pets-photos-slider-wrapper .pets-photos-slider .item-slider:nth-child(3n+1) {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .our-friends-section-wrapper .slider-our-friends .pets-photos-slider-wrapper .pets-photos-slider .item-slider:nth-child(3n+2) {
+    display: none;
+  }
 }
 .our-friends-section-wrapper .button-container-get-the-rest {
   margin-top: 77px;
