@@ -1,0 +1,84 @@
+@keyframes move-right-1200 {
+    from {
+        left: -1075px;
+    }
+    to {
+        left: -2150px;
+    }
+}
+
+@keyframes move-right-768 {
+    from {
+        left: -620px;
+    }
+    to {
+        left: -1240px;
+    }
+}
+
+@keyframes move-right-320 {
+    from {
+        left: -270px;
+    }
+    to {
+        left: -540px;
+    }
+}
+
+
+.transition-right {
+    animation-name: move-right-1200;
+    animation-duration: 1s;
+
+    @media (max-width: $desktop-width) {
+        animation-name: move-right-768;
+        animation-duration: 0.7s;
+    }
+
+    @media (max-width: $tablet-width) {
+        animation-name: move-right-320;
+        animation-duration: 0.5s;
+    }
+}
+
+@keyframes move-left-1200 {
+    from {
+        left: -1075px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes move-left-768 {
+    from {
+        left: -620px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes move-left-320 {
+    from {
+        left: -270px;
+    }
+    to {
+        left: -0px;
+    }
+}
+
+.transition-left {
+    animation-name: move-left-1200;
+    animation-duration: 1s;
+
+    @media (max-width: $desktop-width) {
+        animation-name: move-left-768;
+        animation-duration: 0.7s;
+    }
+
+    @media (max-width: $tablet-width) {
+        animation-name: move-left-320;
+        animation-duration: 0.5s;
+    }
+}

@@ -1,0 +1,36 @@
+// $main-font: 'georgiaregular', 'Times New Roman', serif;
+$main-color: #F1CDB3;
+$dark-color1: #545454;
+$dark-color2: #292929;
+$hover-butt-color: #FDDCC4;
+$transparent-50-black: #00000050;
+$dark-color-black: #000000;
+
+@mixin flex ($justify: center, $align: stretch) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font ($size: 16px, $weight: 400, $color: $main-color) {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin font-arial ($size: 16px, $weight: 400, $color: $main-color) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+%page-display {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+$desktop-width: 1279px;
+$tablet-width: 767px;
+$mobile-width: 320px;

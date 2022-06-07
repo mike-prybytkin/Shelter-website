@@ -1,0 +1,176 @@
+.popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #29292999;
+    top: 0;
+    left: 0;
+    overflow: auto;
+        &:hover .popup-close {
+            background-color: $main-color;
+        }
+
+        &.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+    .popup-body {
+        position: absolute;
+        @include flex(space-between, flex-end);
+        width: 900px;
+        height: 500px;
+        left: calc(50vw - (900px / 2));
+        top: calc(50vh - (500px / 2));
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+            &:hover .popup-close {
+                background-color: transparent;
+            }
+
+        @media (max-width: $desktop-width) {
+            width: 630px;
+            height: 350px;
+            left: calc(50vw - (630px / 2));
+            top: calc(50vh - (350px / 2));
+        }
+    
+        @media (max-width: $tablet-width) {
+            width: 240px;
+            height: 360px;
+            left: calc(50vw - (240px / 2));
+            top: calc(50vh - (360px / 2));
+        }
+
+        .popup-close {
+            position: absolute;
+            left: 895px;
+            top:-50px;
+            align-self: flex-start;
+            @extend %butt-circle;
+            font-size: 28px;
+            color: $dark-color2;
+                &:hover {
+                    background-color: $main-color;
+                }
+
+            @media (max-width: $desktop-width) {
+                left: 625px;
+                top:-50px;
+            }
+
+            @media (max-width: $tablet-width) {
+                left: 235px;
+                top:-50px;
+            }
+        }
+
+        .popup-content {
+            @include flex(space-between, center);
+            column-gap: 30px;
+            width: 900px;
+            height: 500px;
+            background-color: #fafafa;
+            border-radius: 9px;
+
+            @media (max-width: $desktop-width) {
+                width: 630px;
+                height: 350px;
+                column-gap: 20px;
+            }
+
+            @media (max-width: $tablet-width) {
+                width: 250px;
+                height: 360px;
+                column-gap: 0px;
+            }
+
+            .image-pet-modal {
+                width: 500px;
+                height: 500px;
+                background: url(../assets/images/m-500-jennifer.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 9px;
+
+                @media (max-width: $desktop-width) {
+                    width: 350px;
+                    height: 350px;
+                }
+
+                @media (max-width: $tablet-width) {
+                    display: none;
+                }
+
+            }
+
+            .descriptions {
+                width: 370px;
+                @include flex(center, flex-start);
+                flex-direction: column;
+                row-gap: 10px;
+
+                @media (max-width: $tablet-width) {
+                    align-items: center;
+                }
+                h3 {
+                    @include font(35px, 400, $dark-color-black);
+                }
+
+                .type {
+                    @include font(20px, 400, $dark-color-black);
+                }
+
+                .about {
+                    height: 140px;
+                    overflow: auto;
+                    margin-top: 40px;
+                    @include font(15px, 400, $dark-color-black);
+                    padding-right: 3%;
+                    letter-spacing: 0.1em;
+
+                    @media (max-width: $desktop-width) {
+                        height: 120px;
+                        font-size: 13px;
+                        margin-top: 15px;
+                    }
+                    @media (max-width: $tablet-width) {
+                        // height: 120px;
+                        padding-left: 3%;
+                        text-align: justify;
+                    }
+                }
+
+                ul {
+                    margin-top: 10px;
+                    padding-left: 20px;
+                    @include font(15px, 400, $dark-color-black);
+
+                    @media (max-width: $tablet-width) {
+                        padding-left: 30px;
+                        align-self: flex-start;
+                    }
+
+                    li {
+                        margin: 10px 0;
+
+                        @media (max-width: $desktop-width) {
+                            margin: 5px 0;
+                        }
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header.popup-is-open {
+    z-index: 0;
+    padding-right: 22px;
+}
