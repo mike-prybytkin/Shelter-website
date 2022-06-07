@@ -1,2 +1,3 @@
-# mike-prybytkin-JSFE2022Q1
-Private repository for @mike-prybytkin
+# Shelter Cozy House
+
+[Open website](https://mike-prybytkin.github.io/Shelter-website/shelter/pages/main.html
